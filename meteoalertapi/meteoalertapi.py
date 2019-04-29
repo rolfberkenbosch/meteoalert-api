@@ -1,6 +1,12 @@
 import sys
-import urllib2
 import xmltodict
+
+try:
+    # For Python 3.0 and later
+    from urllib.request import urlopen
+except ImportError:
+    # Fall back to Python 2's urllib2
+    from urllib2 import urlopen
 
 class WrongCountry(Exception):
     pass
@@ -23,7 +29,7 @@ class Meteoalert(object):
         province=self.province
 
         try:
-            file = urllib2.urlopen.urlopen('http://meteoalarm.eu/ATOM/'+ country +'.xml')
+            file = urlopen.urlopen('http://meteoalarm.eu/ATOM/'+ country +'.xml')
             data = file.read()
             file.close()
         except:
@@ -38,7 +44,7 @@ class Meteoalert(object):
                         for x in i['link']:
                             if('cap.xml' in x['@href']):
                                 try:
-                                    file = urllib2.urlopen.urlopen(x['@href'])
+                                    file = urlopen.urlopen(x['@href'])
                                     data2 = file.read()
                                     file.close()
                                 except:
