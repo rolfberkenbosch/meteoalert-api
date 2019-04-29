@@ -8,10 +8,10 @@ setuptools.setup(
     version="0.0.6",
     author="Rolf Berkenbosch",
     author_email="rolf@berkenbosch.nl",
-    description="A small api to get alerting messages from extreme weather in Europe.",
+    description="A small api to get alerting messages from extreme weather in Europe from https://www.meteoalarm.eu.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/rolfberkenbosch/meteoalarm_api",
+    url="https://github.com/rolfberkenbosch/meteoalarm-api",
     install_requires=[
         'xmltodict',
     ],
