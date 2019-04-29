@@ -12,6 +12,9 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/rolfberkenbosch/meteoalarm_api",
+    install_requires=[
+        'xmltodict',
+    ],
     packages=setuptools.find_packages(),
     classifiers=(
         "Programming Language :: Python :: 3",
