@@ -29,7 +29,7 @@ class Meteoalert(object):
         province=self.province
 
         try:
-            file = urlopen.urlopen('http://meteoalarm.eu/ATOM/'+ country +'.xml')
+            file = urlopen('http://meteoalarm.eu/ATOM/'+ country +'.xml')
             data = file.read()
             file.close()
         except:
@@ -44,7 +44,7 @@ class Meteoalert(object):
                         for x in i['link']:
                             if('cap.xml' in x['@href']):
                                 try:
-                                    file = urlopen.urlopen(x['@href'])
+                                    file = urlopen(x['@href'])
                                     data2 = file.read()
                                     file.close()
                                 except:
