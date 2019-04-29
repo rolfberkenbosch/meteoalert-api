@@ -1,0 +1,1 @@
+from .meteoalertapi import Meteoalert
