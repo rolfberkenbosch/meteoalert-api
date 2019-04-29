@@ -1,5 +1,5 @@
 import sys
-import urllib.request
+import urllib2
 import xmltodict
 
 class WrongCountry(Exception):
@@ -23,7 +23,7 @@ class Meteoalert(object):
         province=self.province
 
         try:
-            file = urllib.request.urlopen('http://meteoalarm.eu/ATOM/'+ country +'.xml')
+            file = urllib2.urlopen.urlopen('http://meteoalarm.eu/ATOM/'+ country +'.xml')
             data = file.read()
             file.close()
         except:
@@ -38,7 +38,7 @@ class Meteoalert(object):
                         for x in i['link']:
                             if('cap.xml' in x['@href']):
                                 try:
-                                    file = urllib.request.urlopen(x['@href'])
+                                    file = urllib2.urlopen.urlopen(x['@href'])
                                     data2 = file.read()
                                     file.close()
                                 except:
