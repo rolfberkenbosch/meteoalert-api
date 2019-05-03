@@ -16,10 +16,11 @@ class NoProvince(Exception):
 
 class Meteoalert(object):
 
-    def __init__(self, country, province):
+    def __init__(self, country, province, language='en'):
         # Constructer
         self.country = country
         self.province = province
+        self.language = language
 
     def get_alert(self):
         """ Retrieve alert """
@@ -27,6 +28,8 @@ class Meteoalert(object):
         d = {}
         country=self.country.upper()
         province=self.province
+        language=self.language
+        #language+= '*'
 
         try:
             file = urlopen('http://meteoalarm.eu/ATOM/'+ country +'.xml')
@@ -53,7 +56,7 @@ class Meteoalert(object):
 
                                 if "info" in data2['alert']:
                                     for i in data2['alert']['info']:
-                                        if i['language'] == 'en-GB':
+                                        if language in i['language']:
                                             for x in i:
                                                 if(x != 'area'):
                                                     if(x == 'parameter'):
