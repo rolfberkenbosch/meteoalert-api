@@ -1,68 +1,67 @@
 import sys
 import xmltodict
+import requests
 
-try:
-    # For Python 3.0 and later
-    from urllib.request import urlopen
-except ImportError:
-    # Fall back to Python 2's urllib2
-    from urllib2 import urlopen
 
 class WrongCountry(Exception):
     pass
 
-class NoProvince(Exception):
-    pass
 
 class Meteoalert(object):
 
-    def __init__(self, country, province, language='en'):
-        # Constructer
-        self.country = country
+    def __init__(self, country, province, language='en-GB'):
+        self.country = country.upper()
         self.province = province
         self.language = language
 
     def get_alert(self):
-        """ Retrieve alert """
-        id = ""
-        d = {}
-        country=self.country.upper()
-        province=self.province
-        language=self.language
-        #language+= '*'
+        """Retrieve alert data"""
+        data = {}
 
         try:
-            file = urlopen('http://meteoalarm.eu/ATOM/'+ country +'.xml')
-            data = file.read()
-            file.close()
-        except:
+            url = "http://meteoalarm.eu/ATOM/{0}.xml".format(self.country)
+            response = requests.get(url)
+        except Exception:
             raise(WrongCountry())
 
-        data = xmltodict.parse(data)
+        # Parse the XML response for the alert feed and loop over the entries
+        feed_data = xmltodict.parse(response.text)
+        feed = feed_data.get('feed', [])
+        for entry in feed.get('entry', []):
+            if entry.get('cap:areaDesc') != self.province:
+                continue
 
-        if "entry" in data['feed']:
-            for i in data['feed']['entry']:
-                if i['cap:areaDesc'] == province:
-                    if id == "":
-                        for x in i['link']:
-                            if('cap.xml' in x['@href']):
-                                try:
-                                    file = urlopen(x['@href'])
-                                    data2 = file.read()
-                                    file.close()
-                                except:
-                                    raise(WrongCountry())
-                                data2 = xmltodict.parse(data2)
+            # Get the cap URL for additional alert data
+            cap_url = None
+            for link in entry.get('link'):
+                if 'cap.xml' in link.get('@href'):
+                    cap_url = link.get('@href')
 
-                                if "info" in data2['alert']:
-                                    for i in data2['alert']['info']:
-                                        if language in i['language']:
-                                            for x in i:
-                                                if(x != 'area'):
-                                                    if(x == 'parameter'):
-                                                        pass
-                                                        for z in i[x]:
-                                                            d[z['valueName']]=z['value']
-                                                    else:
-                                                        d[x]=i[x]
-            return d
+            if not cap_url:
+                continue
+
+            # Parse the XML response for the alert information
+            try:
+                response = requests.get(cap_url)
+            except Exception:
+                raise(WrongCountry())
+            alert_data = xmltodict.parse(response.text)
+            alert = alert_data.get('alert', {})
+
+            # Get the alert data in the requested language
+            translations = alert.get('info', [])
+            for translation in translations:
+                if self.language not in translation.get('language'):
+                    continue
+
+                # Store alert information in the data dict
+                for key, value in translation.items():
+                    # Check if the value is a string
+                    # Python 2 uses 'basestring' while Python 3 requires 'str'
+                    if isinstance(value, str if sys.version_info[0] >= 3 else basestring):
+                        data[key] = value
+
+                # Don't check other languages
+                break
+
+        return data

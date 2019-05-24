@@ -14,6 +14,7 @@ setuptools.setup(
     url="https://github.com/rolfberkenbosch/meteoalarm-api",
     install_requires=[
         'xmltodict',
+        'requests',
     ],
     packages=setuptools.find_packages(),
     classifiers=(
