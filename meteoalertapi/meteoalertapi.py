@@ -47,21 +47,27 @@ class Meteoalert(object):
                 raise(WrongCountry())
             alert_data = xmltodict.parse(response.text)
             alert = alert_data.get('alert', {})
-
             # Get the alert data in the requested language
             translations = alert.get('info', [])
-            for translation in translations:
-                if self.language not in translation.get('language'):
-                    continue
 
-                # Store alert information in the data dict
-                for key, value in translation.items():
-                    # Check if the value is a string
-                    # Python 2 uses 'basestring' while Python 3 requires 'str'
+            try:
+                for translation in translations:
+                    if self.language not in translation.get('language'):
+                        continue
+
+                    # Store alert information in the data dict
+                    for key, value in translation.items():
+                        # Check if the value is a string
+                        # Python 2 uses 'basestring' while Python 3 requires 'str'
+                        if isinstance(value, str if sys.version_info[0] >= 3 else basestring):
+                            data[key] = value
+
+                    # Don't check other languages
+                    break
+            except:
+                for key, value in translations.items():
                     if isinstance(value, str if sys.version_info[0] >= 3 else basestring):
                         data[key] = value
 
-                # Don't check other languages
-                break
-
+            break
         return data
