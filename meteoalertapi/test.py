@@ -6,6 +6,11 @@ alert = meteo.get_alert()
 for key, value in alert.items():
     print(key + ': ' + value)
 
+meteo = Meteoalert("PT","LEIRIA","pt-PT")
+alert = meteo.get_alert()
+for key, value in alert.items():
+    print(key + ': ' + value)
+
 meteo = Meteoalert("BG","Sofia","bg")
 alert = meteo.get_alert()
 for key, value in alert.items():

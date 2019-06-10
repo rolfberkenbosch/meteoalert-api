@@ -8,6 +8,8 @@ install:
 # command to run tests
 script:
   - python meteoalertapi/test.py
+after_success:
+  - bash <(curl -s https://copilot.blackducksoftware.com/ci/travis/scripts/upload)
 # Deploy a new release to PyPi for every new tag on the 'master' branch on the
 # repository 'rolfberkenbosch/meteoalert-api'
 deploy:
