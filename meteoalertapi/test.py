@@ -1,5 +1,6 @@
 import unittest
 from meteoalertapi import Meteoalert
+coding=utf-8
 
 meteo = Meteoalert("NL","Groningen","NL")
 alert = meteo.get_alert()
