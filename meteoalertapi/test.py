@@ -11,7 +11,7 @@ alert = meteo.get_alert()
 for key, value in alert.items():
     print(key + ': ' + value)
 
-meteo = Meteoalert("BG","Sofia","bg")
+meteo = Meteoalert("PL","Białystok","en")
 alert = meteo.get_alert()
 for key, value in alert.items():
     print(key + ': ' + value)
