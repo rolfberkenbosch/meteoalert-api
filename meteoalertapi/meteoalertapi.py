@@ -26,7 +26,12 @@ class Meteoalert(object):
             raise(WrongCountry())
 
         # Parse the XML response for the alert feed and loop over the entries
-        feed_data = xmltodict.parse(str(response._content, 'utf-8'))
+        if sys.version_info[0] >= 3:
+            text = str(response._content, 'utf-8')
+        else:
+            text = unicode(response._content, "utf-8")
+
+        feed_data = xmltodict.parse(text)
         feed = feed_data.get('feed', [])
         for entry in feed.get('entry', []):
             if entry.get('cap:areaDesc') != self.province:
@@ -46,7 +51,13 @@ class Meteoalert(object):
                 response = requests.get(cap_url)
             except Exception:
                 raise(WrongCountry())
-            alert_data = xmltodict.parse(str(response._content, 'utf-8'))
+
+            if sys.version_info[0] >= 3:
+                text = str(response._content, 'utf-8')
+            else:
+                text = unicode(response._content, "utf-8")
+
+            alert_data = xmltodict.parse(text)
             alert = alert_data.get('alert', {})
             # Get the alert data in the requested language
             translations = alert.get('info', [])
