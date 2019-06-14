@@ -1,7 +1,7 @@
+# - *- coding: utf- 8 - *-
 import sys
 import xmltodict
 import requests
-# coding=utf-8
 
 
 class WrongCountry(Exception):
