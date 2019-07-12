@@ -73,13 +73,19 @@ class Meteoalert(object):
                         # Python 2 uses 'basestring' while Python 3 requires 'str'
                         if isinstance(value, str if sys.version_info[0] >= 3 else basestring):
                             data[key] = value
-
+                    
                     # Don't check other languages
                     break
             except:
                 for key, value in translations.items():
                     if isinstance(value, str if sys.version_info[0] >= 3 else basestring):
                         data[key] = value
-
+            try:
+                parameters  = translation.get('parameter', [])
+                for parameter in parameters:
+                    data[parameter.get('valueName')] = parameter.get('value')
+            except:
+                pass
+                pass
             break
         return data

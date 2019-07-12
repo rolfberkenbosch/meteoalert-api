@@ -7,3 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## 0.0.1 - 2019-04-29
 ###
 - Initial release
+
+## 0.1.6 - 2019-07-12
+###
+- Fix issue with xml to look also over attributes.
