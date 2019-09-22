@@ -1,7 +1,7 @@
 # meteoalarm-api
 
 
-![PyPI](https://img.shields.io/pypi/v/meteoalertapi.svg?style=for-the-badge)
+![PyPI](https://img.shields.io/pypi/v/meteoalertapi.svg?style=for-the-badge|https://pypi.org/project/meteoalertapi)
 ![Travis (.org)](https://img.shields.io/travis/rolfberkenbosch/meteoalert-api.svg?style=for-the-badge)
 
 (Unofficial) Python wrapper for the MeteoAlarm.eu website (European Weahter alarm), which can be used to look if your province in your country has currently had a weather alarm.
