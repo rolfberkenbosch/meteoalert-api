@@ -33,7 +33,8 @@ class Meteoalert(object):
 
         feed_data = xmltodict.parse(text)
         feed = feed_data.get('feed', [])
-        for entry in feed.get('entry', []):
+        entries = feed.get('entry', [])
+        for entry in (entries if type(entries) is list else [entries]):
             if entry.get('cap:areaDesc') != self.province:
                 continue
 
