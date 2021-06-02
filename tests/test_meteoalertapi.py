@@ -6,7 +6,7 @@ from meteoalertapi import Meteoalert
 class TestMeteoalert(unittest.TestCase):
 
     def setUp(self):
-        self.meteo = Meteoalert('IT', 'Toscana', 'it-IT')
+        self.meteo = Meteoalert('netherlands', 'Groningen', 'ne-NL')
 
     def test_get_alert(self):
         """Should return a dict (maybe empty)"""

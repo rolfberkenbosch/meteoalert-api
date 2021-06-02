@@ -11,7 +11,7 @@ class WrongCountry(Exception):
 class Meteoalert(object):
 
     def __init__(self, country, province, language='en-GB'):
-        self.country = country.upper()
+        self.country = country.lower()
         self.province = province
         self.language = language
 
@@ -20,7 +20,7 @@ class Meteoalert(object):
         data = {}
 
         try:
-            url = "http://meteoalarm.eu/ATOM/{0}.xml".format(self.country)
+            url = "https://feeds.meteoalarm.org/feeds/meteoalarm-legacy-atom-{0}".format(self.country)
             response = requests.get(url)
         except Exception:
             raise(WrongCountry())
@@ -41,8 +41,10 @@ class Meteoalert(object):
             # Get the cap URL for additional alert data
             cap_url = None
             for link in entry.get('link'):
-                if 'cap.xml' in link.get('@href'):
+                if 'hub' in link.get('@href'):
                     cap_url = link.get('@href')
+
+            print(cap_url)
 
             if not cap_url:
                 continue
