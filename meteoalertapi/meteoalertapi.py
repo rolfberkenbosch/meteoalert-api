@@ -21,7 +21,7 @@ class Meteoalert(object):
 
         try:
             url = "https://feeds.meteoalarm.org/feeds/meteoalarm-legacy-atom-{0}".format(self.country)
-            response = requests.get(url)
+            response = requests.get(url, timeout=10)
         except Exception:
             raise(WrongCountry())
 
@@ -51,7 +51,7 @@ class Meteoalert(object):
 
             # Parse the XML response for the alert information
             try:
-                response = requests.get(cap_url)
+                response = requests.get(cap_url, timeout=10)
             except Exception:
                 raise(WrongCountry())
 
