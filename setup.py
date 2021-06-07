@@ -11,7 +11,7 @@ setuptools.setup(
     description="A small api to get alerting messages from extreme weather in Europe from https://www.meteoalarm.org.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/rolfberkenbosch/meteoalarm-api",
+    url="https://github.com/rolfberkenbosch/meteoalert-api",
     install_requires=[
         'xmltodict',
         'requests',
