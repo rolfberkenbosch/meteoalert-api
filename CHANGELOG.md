@@ -23,3 +23,9 @@ It's now possible to add all european country that is on the website on
 meteoalarm.org.
 
 - Change the api from meteoalarm.eu to meteoalarm.orge
+
+## 0.1.9 - 2021-06-07
+###
+Several (bug) fixes
+
+- Add timeout for the api to meteoalarm
