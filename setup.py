@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="meteoalertapi",
-    version="0.1.9",
+    version="0.2.0",
     author="Rolf Berkenbosch",
     author_email="rolf@berkenbosch.nl",
     description="A small api to get alerting messages from extreme weather in Europe from https://www.meteoalarm.org.",
