@@ -29,3 +29,8 @@ meteoalarm.org.
 Several (bug) fixes
 
 - Add timeout for the api to meteoalarm
+
+
+## 0.2.0 - 2021-06-07
+###
+Bump to version 0.2.0
