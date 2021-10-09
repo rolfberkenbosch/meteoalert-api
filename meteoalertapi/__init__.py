@@ -1,1 +1,1 @@
-from .meteoalertapi import Meteoalert
+from .meteoalertapi import *
