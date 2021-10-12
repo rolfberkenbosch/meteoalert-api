@@ -1,0 +1,2 @@
+# for tests
+requests-mock == 1.9.3

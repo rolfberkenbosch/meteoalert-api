@@ -3,12 +3,18 @@ import sys
 import xmltodict
 import requests
 
-
 class WrongCountry(Exception):
     pass
 
+class ServerError(Exception):
+    pass
+
+class UnexpectedError(Exception):
+    pass
 
 class Meteoalert(object):
+
+    endpoint = "https://feeds.meteoalarm.org/feeds/meteoalarm-legacy-atom-{0}"
 
     def __init__(self, country, province, language='en-GB'):
         self.country = country.lower()
@@ -20,17 +26,20 @@ class Meteoalert(object):
         data = {}
 
         try:
-            url = "https://feeds.meteoalarm.org/feeds/meteoalarm-legacy-atom-{0}".format(self.country)
+            url = self.endpoint.format(self.country)
             response = requests.get(url, timeout=10)
-        except Exception:
-            raise(WrongCountry())
+        except Exception as err:
+            raise(UnexpectedError(str(err)))
 
-        # Parse the XML response for the alert feed and loop over the entries
+        self.check_status_code(response.status_code)
+
+        # Why not simply use response.text instead of response._content + str/unicode?
         if sys.version_info[0] >= 3:
             text = str(response._content, 'utf-8')
         else:
-            text = unicode(response._content, "utf-8")
+            text = unicode(response._content, 'utf-8')
 
+        # Parse the XML response for the alert feed and loop over the entries
         feed_data = xmltodict.parse(text)
         feed = feed_data.get('feed', [])
         entries = feed.get('entry', [])
@@ -52,8 +61,10 @@ class Meteoalert(object):
             # Parse the XML response for the alert information
             try:
                 response = requests.get(cap_url, timeout=10)
-            except Exception:
-                raise(WrongCountry())
+            except Exception as err:
+                raise(UnexpectedError(str(err)))
+
+            self.check_status_code(response.status_code)
 
             if sys.version_info[0] >= 3:
                 text = str(response._content, 'utf-8')
@@ -92,3 +103,12 @@ class Meteoalert(object):
                 pass
             break
         return data
+
+
+    def check_status_code(self, status_code):
+        if status_code == 404:
+            raise(WrongCountry('Apparently unsupported country name was specified'))
+        elif status_code >= 500:
+            raise(ServerError("Server error - status code: {0}".format(status_code)))
+        elif status_code != 200:
+            raise(UnexpectedError("Server returned unexpected status code: {0}".format(status_code)))
