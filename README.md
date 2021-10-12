@@ -4,7 +4,7 @@
 ![PyPI](https://img.shields.io/pypi/v/meteoalertapi.svg?style=for-the-badge|https://pypi.org/project/meteoalertapi)
 ![Travis (.org)](https://img.shields.io/travis/rolfberkenbosch/meteoalert-api.svg?style=for-the-badge)
 
-(Unofficial) Python wrapper for the MeteoAlarm.org website (European Weahter alarm), which can be used to look if your province in your country has currently had a weather alarm.
+An unofficial Python wrapper for [MeteoAlarm.org](https://meteoalarm.org) website (European Weather alerts), which can be used to check if a given province in your country has currently a weather alert.
 
 ## Installation
 
@@ -19,10 +19,10 @@ pip install meteoalertapi
 ```python
 from meteoalertapi import Meteoalert
 
-# Find you country and province on http://meteoalarm.org/
+# Find you country and province on https://meteoalarm.org/ or https://feeds.meteoalarm.org/
 meteo = Meteoalert('country', 'province_name')
 
-# Get the weather alarm from your place
+# Get the weather alarm for your place
 meteo = Meteoalert('country', 'province_name')
 print(str(meteo.get_alert()))
 ```
