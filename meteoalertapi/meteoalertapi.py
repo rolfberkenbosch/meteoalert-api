@@ -2,6 +2,7 @@
 import sys
 import xmltodict
 import requests
+import re
 
 class WrongCountry(Exception):
     pass
@@ -44,7 +45,8 @@ class Meteoalert(object):
         feed = feed_data.get('feed', [])
         entries = feed.get('entry', [])
         for entry in (entries if type(entries) is list else [entries]):
-            if entry.get('cap:areaDesc') != self.province:
+            #if entry.get('cap:areaDesc') != self.province:
+            if re.search(rf"{self.province}", entry.get('cap:areaDesc'), re.IGNORECASE) == None:
                 continue
 
             # Get the cap URL for additional alert data
