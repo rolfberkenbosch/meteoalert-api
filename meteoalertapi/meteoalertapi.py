@@ -52,7 +52,7 @@ class Meteoalert(object):
             # Get the cap URL for additional alert data
             cap_url = None
             for link in entry.get('link'):
-                if 'hub' in link.get('@href'):
+                if 'application/cap+xml' == link.get('@type'):
                     cap_url = link.get('@href')
 
             print(cap_url)
