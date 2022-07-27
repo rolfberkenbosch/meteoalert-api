@@ -34,3 +34,9 @@ Several (bug) fixes
 ## 0.2.0 - 2021-06-07
 ###
 Bump to version 0.2.0
+
+## 0.3.0 - 2022-07-27
+###
+Bug fix
+
+- Thank @attila123456 to fix the fetching bug
