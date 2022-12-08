@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<alert
+	xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+	<identifier>2.49.0.0.250.0.FR.20221207060126.964028</identifier>
+	<sender>vigilance@meteo.fr</sender>
+	<sent>2022-12-07T06:01:26+01:00</sent>
+	<status>Actual</status>
+	<msgType>Update</msgType>
+	<scope>Public</scope>
+	<references>vigilance@meteo.fr,2.49.0.0.250.0.FR.20221206160108.315028,2022-12-06T16:01:08+01:00</references>
+	<info>
+		<language>fr-FR</language>
+		<category>Met</category>
+		<event>Vigilance jaune avalanches</event>
+		<responseType>AllClear</responseType>
+		<urgency>Future</urgency>
+		<severity>Moderate</severity>
+		<certainty>Likely</certainty>
+		<effective>2022-12-07T06:01:00+01:00</effective>
+		<onset>2022-12-07T06:00:00+01:00</onset>
+		<expires>2022-12-07T06:01:00+01:00</expires>
+		<senderName>METEO-FRANCE</senderName>
+		<headline>Vigilance jaune avalanches</headline>
+		<description>Des phenomenes habituels dans la region mais occasionnellement et localement dangereux sont prevus , 	         (ex. mistral, orage d?ete, montee des eaux, fortes vagues submergeant le littoral)</description>
+		<instruction>Soyez attentifs; si vous pratiquez des activites sensibles au risque meteorologique ou a proximite d'un rivage ou d'un cours d'eau; tenez-vous au courant de l?evolution de la situation.</instruction>
+		<web>http://vigilance.meteofrance.com/</web>
+		<contact>METEO-FRANCE</contact>
+		<parameter>
+			<valueName>awareness_level</valueName>
+			<value>2; yellow; Moderate</value>
+		</parameter>
+		<parameter>
+			<valueName>awareness_type</valueName>
+			<value>9; avalanches</value>
+		</parameter>
+		<area>
+			<areaDesc>Alpes de Haute Provence</areaDesc>
+			<geocode>
+				<valueName>NUTS3</valueName>
+				<value>FR821</value>
+			</geocode>
+		</area>
+		<area>
+			<areaDesc>Hautes Alpes</areaDesc>
+			<geocode>
+				<valueName>NUTS3</valueName>
+				<value>FR822</value>
+			</geocode>
+		</area>
+		<area>
+			<areaDesc>Alpes Maritimes</areaDesc>
+			<geocode>
+				<valueName>NUTS3</valueName>
+				<value>FR823</value>
+			</geocode>
+		</area>
+		<area>
+			<areaDesc>Isere</areaDesc>
+			<geocode>
+				<valueName>NUTS3</valueName>
+				<value>FR714</value>
+			</geocode>
+		</area>
+		<area>
+			<areaDesc>Savoie</areaDesc>
+			<geocode>
+				<valueName>NUTS3</valueName>
+				<value>FR717</value>
+			</geocode>
+		</area>
+		<area>
+			<areaDesc>Haute Savoie</areaDesc>
+			<geocode>
+				<valueName>NUTS3</valueName>
+				<value>FR718</value>
+			</geocode>
+		</area>
+	</info>
+	<info>
+		<language>en-GB</language>
+		<category>Met</category>
+		<event>Moderate avalanches warning</event>
+		<responseType>AllClear</responseType>
+		<urgency>Future</urgency>
+		<severity>Moderate</severity>
+		<certainty>Likely</certainty>
+		<effective>2022-12-07T06:01:00+01:00</effective>
+		<onset>2022-12-07T06:00:00+01:00</onset>
+		<expires>2022-12-07T06:01:00+01:00</expires>
+		<senderName>METEO-FRANCE</senderName>
+		<headline>Moderate avalanches warning</headline>
+		<description>Although rather usual in this region, locally or potentially dangerous phenomena are expected. (such as local winds, summer thunderstorms, rising streams or high waves)</description>
+		<instruction>Be aware and pay attention to the latest weather updates, especially if you carry out activities exposed to weather or close to a stream or shoreline.</instruction>
+		<web>http://vigilance.meteofrance.com/</web>
+		<contact>METEO-FRANCE</contact>
+		<parameter>
+			<valueName>awareness_level</valueName>
+			<value>2; yellow; Moderate</value>
+		</parameter>
+		<parameter>
+			<valueName>awareness_type</valueName>
+			<value>9; avalanches</value>
+		</parameter>
+		<area>
+			<areaDesc>Alpes de Haute Provence</areaDesc>
+			<geocode>
+				<valueName>NUTS3</valueName>
+				<value>FR821</value>
+			</geocode>
+		</area>
+		<area>
+			<areaDesc>Hautes Alpes</areaDesc>
+			<geocode>
+				<valueName>NUTS3</valueName>
+				<value>FR822</value>
+			</geocode>
+		</area>
+		<area>
+			<areaDesc>Alpes Maritimes</areaDesc>
+			<geocode>
+				<valueName>NUTS3</valueName>
+				<value>FR823</value>
+			</geocode>
+		</area>
+		<area>
+			<areaDesc>Isere</areaDesc>
+			<geocode>
+				<valueName>NUTS3</valueName>
+				<value>FR714</value>
+			</geocode>
+		</area>
+		<area>
+			<areaDesc>Savoie</areaDesc>
+			<geocode>
+				<valueName>NUTS3</valueName>
+				<value>FR717</value>
+			</geocode>
+		</area>
+		<area>
+			<areaDesc>Haute Savoie</areaDesc>
+			<geocode>
+				<valueName>NUTS3</valueName>
+				<value>FR718</value>
+			</geocode>
+		</area>
+	</info>
+</alert>

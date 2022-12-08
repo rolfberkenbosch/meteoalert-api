@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed
+	xmlns="http://www.w3.org/2005/Atom"
+	xmlns:cap="urn:oasis:names:tc:emergency:cap:1.2">
+	<link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
+	<link href="https://feeds.meteoalarm.org/feeds/meteoalarm-legacy-atom-france" rel="self" type="application/atom+xml"/>
+	<link href="https://meteoalarm.org" rel="alternate" type="text/html"/>
+	<rights>Copyright (c) 2022, meteoalarm.org</rights>
+	<generator>Meteoalarm Producer Server</generator>
+	<logo>https://feeds.meteoalarm.org/images/logo.svg</logo>
+	<author>
+		<name>meteoalarm.org</name>
+		<uri>https://meteoalarm.org</uri>
+		<email>meteoalarm@zamg.ac.at</email>
+	</author>
+	<id>tag:meteoalarm.org,2021-02-19:FR</id>
+	<title>Meteoalarm - severe weather warnings for Europe</title>
+	<updated>2022-12-08T00:36:08.851613Z</updated>
+	<entry>
+		<cap:geocode>
+			<valueName>NUTS3</valueName>
+			<value>FR718</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:FR035" hreflang="en" title="Haute Savoie"/>
+		<cap:areaDesc>Haute Savoie</cap:areaDesc>
+		<cap:event>Moderate avalanches warning</cap:event>
+		<cap:sent>2022-12-07T15:00:58+00:00</cap:sent>
+		<cap:expires>2022-12-08T15:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-07T15:00:00+00:00</cap:effective>
+		<cap:onset>2022-12-07T15:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Alert</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.250.0.FR.20221207160058.764028</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-france/04d497d4-d114-4d6b-93ba-13fa7ed577fe" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=FR" hreflang="en" rel="related" title="France"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T15:00:58Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-france/04d497d4-d114-4d6b-93ba-13fa7ed577fe?index_info=1&amp;index_area=5&amp;index_geocode=0</id>
+		<title>Yellow Avalanches Warning issued for France - Haute Savoie</title>
+		<updated>2022-12-07T15:00:58Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>NUTS3</valueName>
+			<value>FR717</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:FR036" hreflang="en" title="Savoie"/>
+		<cap:areaDesc>Savoie</cap:areaDesc>
+		<cap:event>Moderate avalanches warning</cap:event>
+		<cap:sent>2022-12-07T15:00:58+00:00</cap:sent>
+		<cap:expires>2022-12-08T15:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-07T15:00:00+00:00</cap:effective>
+		<cap:onset>2022-12-07T15:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Alert</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.250.0.FR.20221207160058.764028</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-france/04d497d4-d114-4d6b-93ba-13fa7ed577fe" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=FR" hreflang="en" rel="related" title="France"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T15:00:58Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-france/04d497d4-d114-4d6b-93ba-13fa7ed577fe?index_info=1&amp;index_area=4&amp;index_geocode=0</id>
+		<title>Yellow Avalanches Warning issued for France - Savoie</title>
+		<updated>2022-12-07T15:00:58Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>NUTS3</valueName>
+			<value>FR714</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:FR034" hreflang="en" title="Isere"/>
+		<cap:areaDesc>Isere</cap:areaDesc>
+		<cap:event>Moderate avalanches warning</cap:event>
+		<cap:sent>2022-12-07T15:00:58+00:00</cap:sent>
+		<cap:expires>2022-12-08T15:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-07T15:00:00+00:00</cap:effective>
+		<cap:onset>2022-12-07T15:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Alert</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.250.0.FR.20221207160058.764028</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-france/04d497d4-d114-4d6b-93ba-13fa7ed577fe" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=FR" hreflang="en" rel="related" title="France"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T15:00:58Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-france/04d497d4-d114-4d6b-93ba-13fa7ed577fe?index_info=1&amp;index_area=3&amp;index_geocode=0</id>
+		<title>Yellow Avalanches Warning issued for France - Isere</title>
+		<updated>2022-12-07T15:00:58Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>NUTS3</valueName>
+			<value>FR823</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:FR029" hreflang="en" title="Alpes Maritimes"/>
+		<cap:areaDesc>Alpes Maritimes</cap:areaDesc>
+		<cap:event>Moderate avalanches warning</cap:event>
+		<cap:sent>2022-12-07T15:00:58+00:00</cap:sent>
+		<cap:expires>2022-12-08T15:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-07T15:00:00+00:00</cap:effective>
+		<cap:onset>2022-12-07T15:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Alert</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.250.0.FR.20221207160058.764028</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-france/04d497d4-d114-4d6b-93ba-13fa7ed577fe" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=FR" hreflang="en" rel="related" title="France"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T15:00:58Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-france/04d497d4-d114-4d6b-93ba-13fa7ed577fe?index_info=1&amp;index_area=2&amp;index_geocode=0</id>
+		<title>Yellow Avalanches Warning issued for France - Alpes Maritimes</title>
+		<updated>2022-12-07T15:00:58Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>NUTS3</valueName>
+			<value>FR822</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:FR033" hreflang="en" title="Hautes Alpes"/>
+		<cap:areaDesc>Hautes Alpes</cap:areaDesc>
+		<cap:event>Moderate avalanches warning</cap:event>
+		<cap:sent>2022-12-07T15:00:58+00:00</cap:sent>
+		<cap:expires>2022-12-08T15:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-07T15:00:00+00:00</cap:effective>
+		<cap:onset>2022-12-07T15:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Alert</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.250.0.FR.20221207160058.764028</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-france/04d497d4-d114-4d6b-93ba-13fa7ed577fe" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=FR" hreflang="en" rel="related" title="France"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T15:00:58Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-france/04d497d4-d114-4d6b-93ba-13fa7ed577fe?index_info=1&amp;index_area=1&amp;index_geocode=0</id>
+		<title>Yellow Avalanches Warning issued for France - Hautes Alpes</title>
+		<updated>2022-12-07T15:00:58Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>NUTS3</valueName>
+			<value>FR821</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:FR032" hreflang="en" title="Alpes de Haute Provence"/>
+		<cap:areaDesc>Alpes de Haute Provence</cap:areaDesc>
+		<cap:event>Moderate avalanches warning</cap:event>
+		<cap:sent>2022-12-07T15:00:58+00:00</cap:sent>
+		<cap:expires>2022-12-08T15:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-07T15:00:00+00:00</cap:effective>
+		<cap:onset>2022-12-07T15:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Alert</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.250.0.FR.20221207160058.764028</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-france/04d497d4-d114-4d6b-93ba-13fa7ed577fe" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=FR" hreflang="en" rel="related" title="France"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T15:00:58Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-france/04d497d4-d114-4d6b-93ba-13fa7ed577fe?index_info=1&amp;index_area=0&amp;index_geocode=0</id>
+		<title>Yellow Avalanches Warning issued for France - Alpes de Haute Provence</title>
+		<updated>2022-12-07T15:00:58Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>NUTS3</valueName>
+			<value>FR718</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:FR035" hreflang="en" title="Haute Savoie"/>
+		<cap:areaDesc>Haute Savoie</cap:areaDesc>
+		<cap:event>Moderate avalanches warning</cap:event>
+		<cap:sent>2022-12-07T05:01:26+00:00</cap:sent>
+		<cap:expires>2022-12-07T05:01:00+00:00</cap:expires>
+		<cap:effective>2022-12-07T05:01:00+00:00</cap:effective>
+		<cap:onset>2022-12-07T05:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Update</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.250.0.FR.20221207060126.964028</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-france/2f32f9f9-06df-48aa-b0a0-10493ea07c51" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=FR" hreflang="en" rel="related" title="France"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T05:01:26Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-france/2f32f9f9-06df-48aa-b0a0-10493ea07c51?index_info=1&amp;index_area=5&amp;index_geocode=0</id>
+		<title>Yellow Avalanches Warning issued for France - Haute Savoie</title>
+		<updated>2022-12-07T05:01:26Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>NUTS3</valueName>
+			<value>FR717</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:FR036" hreflang="en" title="Savoie"/>
+		<cap:areaDesc>Savoie</cap:areaDesc>
+		<cap:event>Moderate avalanches warning</cap:event>
+		<cap:sent>2022-12-07T05:01:26+00:00</cap:sent>
+		<cap:expires>2022-12-07T05:01:00+00:00</cap:expires>
+		<cap:effective>2022-12-07T05:01:00+00:00</cap:effective>
+		<cap:onset>2022-12-07T05:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Update</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.250.0.FR.20221207060126.964028</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-france/2f32f9f9-06df-48aa-b0a0-10493ea07c51" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=FR" hreflang="en" rel="related" title="France"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T05:01:26Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-france/2f32f9f9-06df-48aa-b0a0-10493ea07c51?index_info=1&amp;index_area=4&amp;index_geocode=0</id>
+		<title>Yellow Avalanches Warning issued for France - Savoie</title>
+		<updated>2022-12-07T05:01:26Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>NUTS3</valueName>
+			<value>FR714</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:FR034" hreflang="en" title="Isere"/>
+		<cap:areaDesc>Isere</cap:areaDesc>
+		<cap:event>Moderate avalanches warning</cap:event>
+		<cap:sent>2022-12-07T05:01:26+00:00</cap:sent>
+		<cap:expires>2022-12-07T05:01:00+00:00</cap:expires>
+		<cap:effective>2022-12-07T05:01:00+00:00</cap:effective>
+		<cap:onset>2022-12-07T05:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Update</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.250.0.FR.20221207060126.964028</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-france/2f32f9f9-06df-48aa-b0a0-10493ea07c51" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=FR" hreflang="en" rel="related" title="France"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T05:01:26Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-france/2f32f9f9-06df-48aa-b0a0-10493ea07c51?index_info=1&amp;index_area=3&amp;index_geocode=0</id>
+		<title>Yellow Avalanches Warning issued for France - Isere</title>
+		<updated>2022-12-07T05:01:26Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>NUTS3</valueName>
+			<value>FR823</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:FR029" hreflang="en" title="Alpes Maritimes"/>
+		<cap:areaDesc>Alpes Maritimes</cap:areaDesc>
+		<cap:event>Moderate avalanches warning</cap:event>
+		<cap:sent>2022-12-07T05:01:26+00:00</cap:sent>
+		<cap:expires>2022-12-07T05:01:00+00:00</cap:expires>
+		<cap:effective>2022-12-07T05:01:00+00:00</cap:effective>
+		<cap:onset>2022-12-07T05:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Update</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.250.0.FR.20221207060126.964028</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-france/2f32f9f9-06df-48aa-b0a0-10493ea07c51" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=FR" hreflang="en" rel="related" title="France"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T05:01:26Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-france/2f32f9f9-06df-48aa-b0a0-10493ea07c51?index_info=1&amp;index_area=2&amp;index_geocode=0</id>
+		<title>Yellow Avalanches Warning issued for France - Alpes Maritimes</title>
+		<updated>2022-12-07T05:01:26Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>NUTS3</valueName>
+			<value>FR822</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:FR033" hreflang="en" title="Hautes Alpes"/>
+		<cap:areaDesc>Hautes Alpes</cap:areaDesc>
+		<cap:event>Moderate avalanches warning</cap:event>
+		<cap:sent>2022-12-07T05:01:26+00:00</cap:sent>
+		<cap:expires>2022-12-07T05:01:00+00:00</cap:expires>
+		<cap:effective>2022-12-07T05:01:00+00:00</cap:effective>
+		<cap:onset>2022-12-07T05:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Update</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.250.0.FR.20221207060126.964028</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-france/2f32f9f9-06df-48aa-b0a0-10493ea07c51" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=FR" hreflang="en" rel="related" title="France"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T05:01:26Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-france/2f32f9f9-06df-48aa-b0a0-10493ea07c51?index_info=1&amp;index_area=1&amp;index_geocode=0</id>
+		<title>Yellow Avalanches Warning issued for France - Hautes Alpes</title>
+		<updated>2022-12-07T05:01:26Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>NUTS3</valueName>
+			<value>FR821</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:FR032" hreflang="en" title="Alpes de Haute Provence"/>
+		<cap:areaDesc>Alpes de Haute Provence</cap:areaDesc>
+		<cap:event>Moderate avalanches warning</cap:event>
+		<cap:sent>2022-12-07T05:01:26+00:00</cap:sent>
+		<cap:expires>2022-12-07T05:01:00+00:00</cap:expires>
+		<cap:effective>2022-12-07T05:01:00+00:00</cap:effective>
+		<cap:onset>2022-12-07T05:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Update</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.250.0.FR.20221207060126.964028</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-france/2f32f9f9-06df-48aa-b0a0-10493ea07c51" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=FR" hreflang="en" rel="related" title="France"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T05:01:26Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-france/2f32f9f9-06df-48aa-b0a0-10493ea07c51?index_info=1&amp;index_area=0&amp;index_geocode=0</id>
+		<title>Yellow Avalanches Warning issued for France - Alpes de Haute Provence</title>
+		<updated>2022-12-07T05:01:26Z</updated>
+	</entry>
+</feed>

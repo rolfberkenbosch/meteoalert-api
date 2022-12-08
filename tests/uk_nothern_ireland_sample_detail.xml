@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<alert
+	xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+	<identifier>2.49.0.0.826.0.GB_221207102835_a705d176.v1.0.SI</identifier>
+	<sender>https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings</sender>
+	<sent>2022-12-07T10:28:35+00:00</sent>
+	<status>Actual</status>
+	<msgType>Alert</msgType>
+	<source>2.49.0.0.826.0.GB</source>
+	<scope>Public</scope>
+	<info>
+		<language>en-GB</language>
+		<category>Met</category>
+		<event>Yellow ice warning</event>
+		<responseType>Prepare</responseType>
+		<urgency>Future</urgency>
+		<severity>Moderate</severity>
+		<certainty>Likely</certainty>
+		<effective>2022-12-07T10:28:35+00:00</effective>
+		<onset>2022-12-08T16:00:00+00:00</onset>
+		<expires>2022-12-09T12:00:00+00:00</expires>
+		<senderName>UK Met Office</senderName>
+		<headline>Some disruption is likely due to icy surfaces.</headline>
+		<description>Frequent wintry showers are likely to fall on frozen surfaces in places, leading to the formation of icy patches. These showers are likely to fall as snow on high ground, with the potential for several centimetres to accumulate over parts of southern Scotland, Northeast England, N Wales, the North York Moors and Northern Ireland. For further details see https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings</description>
+		<instruction>What to expect: Some injuries from slips and falls on icy surfaces; Probably some icy patches on some untreated roads, pavements and cycle paths.</instruction>
+		<web>https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings</web>
+		<parameter>
+			<valueName>awareness_level</valueName>
+			<value>2; Yellow; Moderate</value>
+		</parameter>
+		<parameter>
+			<valueName>awareness_type</valueName>
+			<value>2; Snow-Ice</value>
+		</parameter>
+		<area>
+			<areaDesc>East Midlands</areaDesc>
+			<geocode>
+				<valueName>EMMA_ID</valueName>
+				<value>UK113</value>
+			</geocode>
+		</area>
+		<area>
+			<areaDesc>East of England</areaDesc>
+			<geocode>
+				<valueName>EMMA_ID</valueName>
+				<value>UK114</value>
+			</geocode>
+		</area>
+		<area>
+			<areaDesc>North East England</areaDesc>
+			<geocode>
+				<valueName>EMMA_ID</valueName>
+				<value>UK110</value>
+			</geocode>
+		</area>
+		<area>
+			<areaDesc>North West England</areaDesc>
+			<geocode>
+				<valueName>EMMA_ID</valueName>
+				<value>UK109</value>
+			</geocode>
+		</area>
+		<area>
+			<areaDesc>Northern Ireland</areaDesc>
+			<geocode>
+				<valueName>EMMA_ID</valueName>
+				<value>UK108</value>
+			</geocode>
+		</area>
+		<area>
+			<areaDesc>SW Scotland, Lothian Borders</areaDesc>
+			<geocode>
+				<valueName>EMMA_ID</valueName>
+				<value>UK107</value>
+			</geocode>
+		</area>
+		<area>
+			<areaDesc>South West England</areaDesc>
+			<geocode>
+				<valueName>EMMA_ID</valueName>
+				<value>UK115</value>
+			</geocode>
+		</area>
+		<area>
+			<areaDesc>Strathclyde</areaDesc>
+			<geocode>
+				<valueName>EMMA_ID</valueName>
+				<value>UK105</value>
+			</geocode>
+		</area>
+		<area>
+			<areaDesc>Wales</areaDesc>
+			<geocode>
+				<valueName>EMMA_ID</valueName>
+				<value>UK117</value>
+			</geocode>
+		</area>
+		<area>
+			<areaDesc>Yorkshire &amp; Humber</areaDesc>
+			<geocode>
+				<valueName>EMMA_ID</valueName>
+				<value>UK111</value>
+			</geocode>
+		</area>
+	</info>
+</alert>
