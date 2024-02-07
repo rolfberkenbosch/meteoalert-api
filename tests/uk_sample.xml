@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed
+	xmlns="http://www.w3.org/2005/Atom"
+	xmlns:cap="urn:oasis:names:tc:emergency:cap:1.2">
+	<link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
+	<link href="https://feeds.meteoalarm.org/feeds/meteoalarm-legacy-atom-united-kingdom" rel="self" type="application/atom+xml"/>
+	<link href="https://meteoalarm.org" rel="alternate" type="text/html"/>
+	<rights>Copyright (c) 2022, meteoalarm.org</rights>
+	<generator>Meteoalarm Producer Server</generator>
+	<logo>https://feeds.meteoalarm.org/images/logo.svg</logo>
+	<author>
+		<name>meteoalarm.org</name>
+		<uri>https://meteoalarm.org</uri>
+		<email>meteoalarm@zamg.ac.at</email>
+	</author>
+	<id>tag:meteoalarm.org,2021-02-19:UK</id>
+	<title>Meteoalarm - severe weather warnings for Europe</title>
+	<updated>2022-12-08T00:15:57.684748Z</updated>
+	<entry>
+		<cap:geocode>
+			<valueName>EMMA_ID</valueName>
+			<value>UK105</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:UK105" hreflang="en" title="Strathclyde"/>
+		<cap:areaDesc>Strathclyde</cap:areaDesc>
+		<cap:event>Yellow snow warning</cap:event>
+		<cap:sent>2022-12-07T10:28:52+00:00</cap:sent>
+		<cap:expires>2022-12-09T12:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-03T11:18:27+00:00</cap:effective>
+		<cap:onset>2022-12-07T00:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Immediate</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Update</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.826.0.GB_221207102852_8785e37a.v3.0.SI</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/8dc8fa43-1146-455e-b831-4449ac7e10af" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=UK" hreflang="en" rel="related" title="United Kingdom"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T10:28:52Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/8dc8fa43-1146-455e-b831-4449ac7e10af?index_info=0&amp;index_area=4&amp;index_geocode=0</id>
+		<title>Yellow Snow-ice Warning issued for United Kingdom - Strathclyde</title>
+		<updated>2022-12-07T10:28:52Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>EMMA_ID</valueName>
+			<value>UK101</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:UK101" hreflang="en" title="Orkney &amp; Shetland"/>
+		<cap:areaDesc>Orkney &amp; Shetland</cap:areaDesc>
+		<cap:event>Yellow snow warning</cap:event>
+		<cap:sent>2022-12-07T10:28:52+00:00</cap:sent>
+		<cap:expires>2022-12-09T12:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-03T11:18:27+00:00</cap:effective>
+		<cap:onset>2022-12-07T00:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Immediate</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Update</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.826.0.GB_221207102852_8785e37a.v3.0.SI</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/8dc8fa43-1146-455e-b831-4449ac7e10af" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=UK" hreflang="en" rel="related" title="United Kingdom"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T10:28:52Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/8dc8fa43-1146-455e-b831-4449ac7e10af?index_info=0&amp;index_area=3&amp;index_geocode=0</id>
+		<title>Yellow Snow-ice Warning issued for United Kingdom - Orkney &amp; Shetland</title>
+		<updated>2022-12-07T10:28:52Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>EMMA_ID</valueName>
+			<value>UK102</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:UK102" hreflang="en" title="Highlands &amp; Eilean Siar"/>
+		<cap:areaDesc>Highlands &amp; Eilean Siar</cap:areaDesc>
+		<cap:event>Yellow snow warning</cap:event>
+		<cap:sent>2022-12-07T10:28:52+00:00</cap:sent>
+		<cap:expires>2022-12-09T12:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-03T11:18:27+00:00</cap:effective>
+		<cap:onset>2022-12-07T00:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Immediate</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Update</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.826.0.GB_221207102852_8785e37a.v3.0.SI</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/8dc8fa43-1146-455e-b831-4449ac7e10af" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=UK" hreflang="en" rel="related" title="United Kingdom"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T10:28:52Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/8dc8fa43-1146-455e-b831-4449ac7e10af?index_info=0&amp;index_area=2&amp;index_geocode=0</id>
+		<title>Yellow Snow-ice Warning issued for United Kingdom - Highlands &amp; Eilean Siar</title>
+		<updated>2022-12-07T10:28:52Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>EMMA_ID</valueName>
+			<value>UK103</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:UK103" hreflang="en" title="Grampian"/>
+		<cap:areaDesc>Grampian</cap:areaDesc>
+		<cap:event>Yellow snow warning</cap:event>
+		<cap:sent>2022-12-07T10:28:52+00:00</cap:sent>
+		<cap:expires>2022-12-09T12:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-03T11:18:27+00:00</cap:effective>
+		<cap:onset>2022-12-07T00:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Immediate</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Update</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.826.0.GB_221207102852_8785e37a.v3.0.SI</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/8dc8fa43-1146-455e-b831-4449ac7e10af" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=UK" hreflang="en" rel="related" title="United Kingdom"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T10:28:52Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/8dc8fa43-1146-455e-b831-4449ac7e10af?index_info=0&amp;index_area=1&amp;index_geocode=0</id>
+		<title>Yellow Snow-ice Warning issued for United Kingdom - Grampian</title>
+		<updated>2022-12-07T10:28:52Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>EMMA_ID</valueName>
+			<value>UK104</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:UK104" hreflang="en" title="Central Tayside &amp; Fife"/>
+		<cap:areaDesc>Central Tayside &amp; Fife</cap:areaDesc>
+		<cap:event>Yellow snow warning</cap:event>
+		<cap:sent>2022-12-07T10:28:52+00:00</cap:sent>
+		<cap:expires>2022-12-09T12:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-03T11:18:27+00:00</cap:effective>
+		<cap:onset>2022-12-07T00:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Immediate</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Update</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.826.0.GB_221207102852_8785e37a.v3.0.SI</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/8dc8fa43-1146-455e-b831-4449ac7e10af" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=UK" hreflang="en" rel="related" title="United Kingdom"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T10:28:52Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/8dc8fa43-1146-455e-b831-4449ac7e10af?index_info=0&amp;index_area=0&amp;index_geocode=0</id>
+		<title>Yellow Snow-ice Warning issued for United Kingdom - Central Tayside &amp; Fife</title>
+		<updated>2022-12-07T10:28:52Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>EMMA_ID</valueName>
+			<value>UK111</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:UK111" hreflang="en" title="Yorkshire &amp; Humber"/>
+		<cap:areaDesc>Yorkshire &amp; Humber</cap:areaDesc>
+		<cap:event>Yellow ice warning</cap:event>
+		<cap:sent>2022-12-07T10:28:35+00:00</cap:sent>
+		<cap:expires>2022-12-09T12:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-07T10:28:35+00:00</cap:effective>
+		<cap:onset>2022-12-08T16:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Alert</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.826.0.GB_221207102835_a705d176.v1.0.SI</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/a4647d38-40ea-4c01-b874-4e2b3df383b9" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=UK" hreflang="en" rel="related" title="United Kingdom"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T10:28:35Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/a4647d38-40ea-4c01-b874-4e2b3df383b9?index_info=0&amp;index_area=9&amp;index_geocode=0</id>
+		<title>Yellow Snow-ice Warning issued for United Kingdom - Yorkshire &amp; Humber</title>
+		<updated>2022-12-07T10:28:35Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>EMMA_ID</valueName>
+			<value>UK117</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:UK117" hreflang="en" title="Wales"/>
+		<cap:areaDesc>Wales</cap:areaDesc>
+		<cap:event>Yellow ice warning</cap:event>
+		<cap:sent>2022-12-07T10:28:35+00:00</cap:sent>
+		<cap:expires>2022-12-09T12:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-07T10:28:35+00:00</cap:effective>
+		<cap:onset>2022-12-08T16:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Alert</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.826.0.GB_221207102835_a705d176.v1.0.SI</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/a4647d38-40ea-4c01-b874-4e2b3df383b9" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=UK" hreflang="en" rel="related" title="United Kingdom"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T10:28:35Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/a4647d38-40ea-4c01-b874-4e2b3df383b9?index_info=0&amp;index_area=8&amp;index_geocode=0</id>
+		<title>Yellow Snow-ice Warning issued for United Kingdom - Wales</title>
+		<updated>2022-12-07T10:28:35Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>EMMA_ID</valueName>
+			<value>UK105</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:UK105" hreflang="en" title="Strathclyde"/>
+		<cap:areaDesc>Strathclyde</cap:areaDesc>
+		<cap:event>Yellow ice warning</cap:event>
+		<cap:sent>2022-12-07T10:28:35+00:00</cap:sent>
+		<cap:expires>2022-12-09T12:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-07T10:28:35+00:00</cap:effective>
+		<cap:onset>2022-12-08T16:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Alert</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.826.0.GB_221207102835_a705d176.v1.0.SI</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/a4647d38-40ea-4c01-b874-4e2b3df383b9" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=UK" hreflang="en" rel="related" title="United Kingdom"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T10:28:35Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/a4647d38-40ea-4c01-b874-4e2b3df383b9?index_info=0&amp;index_area=7&amp;index_geocode=0</id>
+		<title>Yellow Snow-ice Warning issued for United Kingdom - Strathclyde</title>
+		<updated>2022-12-07T10:28:35Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>EMMA_ID</valueName>
+			<value>UK115</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:UK115" hreflang="en" title="South West England"/>
+		<cap:areaDesc>South West England</cap:areaDesc>
+		<cap:event>Yellow ice warning</cap:event>
+		<cap:sent>2022-12-07T10:28:35+00:00</cap:sent>
+		<cap:expires>2022-12-09T12:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-07T10:28:35+00:00</cap:effective>
+		<cap:onset>2022-12-08T16:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Alert</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.826.0.GB_221207102835_a705d176.v1.0.SI</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/a4647d38-40ea-4c01-b874-4e2b3df383b9" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=UK" hreflang="en" rel="related" title="United Kingdom"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T10:28:35Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/a4647d38-40ea-4c01-b874-4e2b3df383b9?index_info=0&amp;index_area=6&amp;index_geocode=0</id>
+		<title>Yellow Snow-ice Warning issued for United Kingdom - South West England</title>
+		<updated>2022-12-07T10:28:35Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>EMMA_ID</valueName>
+			<value>UK107</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:UK107" hreflang="en" title="SW Scotland, Lothian Borders"/>
+		<cap:areaDesc>SW Scotland, Lothian Borders</cap:areaDesc>
+		<cap:event>Yellow ice warning</cap:event>
+		<cap:sent>2022-12-07T10:28:35+00:00</cap:sent>
+		<cap:expires>2022-12-09T12:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-07T10:28:35+00:00</cap:effective>
+		<cap:onset>2022-12-08T16:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Alert</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.826.0.GB_221207102835_a705d176.v1.0.SI</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/a4647d38-40ea-4c01-b874-4e2b3df383b9" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=UK" hreflang="en" rel="related" title="United Kingdom"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T10:28:35Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/a4647d38-40ea-4c01-b874-4e2b3df383b9?index_info=0&amp;index_area=5&amp;index_geocode=0</id>
+		<title>Yellow Snow-ice Warning issued for United Kingdom - SW Scotland, Lothian Borders</title>
+		<updated>2022-12-07T10:28:35Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>EMMA_ID</valueName>
+			<value>UK108</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:UK108" hreflang="en" title="Northern Ireland"/>
+		<cap:areaDesc>Northern Ireland</cap:areaDesc>
+		<cap:event>Yellow ice warning</cap:event>
+		<cap:sent>2022-12-07T10:28:35+00:00</cap:sent>
+		<cap:expires>2022-12-09T12:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-07T10:28:35+00:00</cap:effective>
+		<cap:onset>2022-12-08T16:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Alert</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.826.0.GB_221207102835_a705d176.v1.0.SI</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/a4647d38-40ea-4c01-b874-4e2b3df383b9" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=UK" hreflang="en" rel="related" title="United Kingdom"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T10:28:35Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/a4647d38-40ea-4c01-b874-4e2b3df383b9?index_info=0&amp;index_area=4&amp;index_geocode=0</id>
+		<title>Yellow Snow-ice Warning issued for United Kingdom - Northern Ireland</title>
+		<updated>2022-12-07T10:28:35Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>EMMA_ID</valueName>
+			<value>UK109</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:UK109" hreflang="en" title="North West England"/>
+		<cap:areaDesc>North West England</cap:areaDesc>
+		<cap:event>Yellow ice warning</cap:event>
+		<cap:sent>2022-12-07T10:28:35+00:00</cap:sent>
+		<cap:expires>2022-12-09T12:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-07T10:28:35+00:00</cap:effective>
+		<cap:onset>2022-12-08T16:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Alert</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.826.0.GB_221207102835_a705d176.v1.0.SI</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/a4647d38-40ea-4c01-b874-4e2b3df383b9" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=UK" hreflang="en" rel="related" title="United Kingdom"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T10:28:35Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/a4647d38-40ea-4c01-b874-4e2b3df383b9?index_info=0&amp;index_area=3&amp;index_geocode=0</id>
+		<title>Yellow Snow-ice Warning issued for United Kingdom - North West England</title>
+		<updated>2022-12-07T10:28:35Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>EMMA_ID</valueName>
+			<value>UK110</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:UK110" hreflang="en" title="North East England"/>
+		<cap:areaDesc>North East England</cap:areaDesc>
+		<cap:event>Yellow ice warning</cap:event>
+		<cap:sent>2022-12-07T10:28:35+00:00</cap:sent>
+		<cap:expires>2022-12-09T12:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-07T10:28:35+00:00</cap:effective>
+		<cap:onset>2022-12-08T16:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Alert</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.826.0.GB_221207102835_a705d176.v1.0.SI</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/a4647d38-40ea-4c01-b874-4e2b3df383b9" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=UK" hreflang="en" rel="related" title="United Kingdom"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T10:28:35Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/a4647d38-40ea-4c01-b874-4e2b3df383b9?index_info=0&amp;index_area=2&amp;index_geocode=0</id>
+		<title>Yellow Snow-ice Warning issued for United Kingdom - North East England</title>
+		<updated>2022-12-07T10:28:35Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>EMMA_ID</valueName>
+			<value>UK114</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:UK114" hreflang="en" title="East of England"/>
+		<cap:areaDesc>East of England</cap:areaDesc>
+		<cap:event>Yellow ice warning</cap:event>
+		<cap:sent>2022-12-07T10:28:35+00:00</cap:sent>
+		<cap:expires>2022-12-09T12:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-07T10:28:35+00:00</cap:effective>
+		<cap:onset>2022-12-08T16:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Alert</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.826.0.GB_221207102835_a705d176.v1.0.SI</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/a4647d38-40ea-4c01-b874-4e2b3df383b9" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=UK" hreflang="en" rel="related" title="United Kingdom"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T10:28:35Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/a4647d38-40ea-4c01-b874-4e2b3df383b9?index_info=0&amp;index_area=1&amp;index_geocode=0</id>
+		<title>Yellow Snow-ice Warning issued for United Kingdom - East of England</title>
+		<updated>2022-12-07T10:28:35Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>EMMA_ID</valueName>
+			<value>UK113</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:UK113" hreflang="en" title="East Midlands"/>
+		<cap:areaDesc>East Midlands</cap:areaDesc>
+		<cap:event>Yellow ice warning</cap:event>
+		<cap:sent>2022-12-07T10:28:35+00:00</cap:sent>
+		<cap:expires>2022-12-09T12:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-07T10:28:35+00:00</cap:effective>
+		<cap:onset>2022-12-08T16:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Alert</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.826.0.GB_221207102835_a705d176.v1.0.SI</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/a4647d38-40ea-4c01-b874-4e2b3df383b9" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=UK" hreflang="en" rel="related" title="United Kingdom"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T10:28:35Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/a4647d38-40ea-4c01-b874-4e2b3df383b9?index_info=0&amp;index_area=0&amp;index_geocode=0</id>
+		<title>Yellow Snow-ice Warning issued for United Kingdom - East Midlands</title>
+		<updated>2022-12-07T10:28:35Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>EMMA_ID</valueName>
+			<value>UK111</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:UK111" hreflang="en" title="Yorkshire &amp; Humber"/>
+		<cap:areaDesc>Yorkshire &amp; Humber</cap:areaDesc>
+		<cap:event>Yellow ice warning</cap:event>
+		<cap:sent>2022-12-07T10:21:15+00:00</cap:sent>
+		<cap:expires>2022-12-08T12:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-06T10:25:36+00:00</cap:effective>
+		<cap:onset>2022-12-07T18:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Update</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.826.0.GB_221207102115_f8266282.v2.0.SI</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/3a6219b9-3875-4cb9-9c0d-874f619ec0b2" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=UK" hreflang="en" rel="related" title="United Kingdom"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T10:21:15Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/3a6219b9-3875-4cb9-9c0d-874f619ec0b2?index_info=0&amp;index_area=4&amp;index_geocode=0</id>
+		<title>Yellow Snow-ice Warning issued for United Kingdom - Yorkshire &amp; Humber</title>
+		<updated>2022-12-07T10:21:15Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>EMMA_ID</valueName>
+			<value>UK107</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:UK107" hreflang="en" title="SW Scotland, Lothian Borders"/>
+		<cap:areaDesc>SW Scotland, Lothian Borders</cap:areaDesc>
+		<cap:event>Yellow ice warning</cap:event>
+		<cap:sent>2022-12-07T10:21:15+00:00</cap:sent>
+		<cap:expires>2022-12-08T12:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-06T10:25:36+00:00</cap:effective>
+		<cap:onset>2022-12-07T18:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Update</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.826.0.GB_221207102115_f8266282.v2.0.SI</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/3a6219b9-3875-4cb9-9c0d-874f619ec0b2" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=UK" hreflang="en" rel="related" title="United Kingdom"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T10:21:15Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/3a6219b9-3875-4cb9-9c0d-874f619ec0b2?index_info=0&amp;index_area=3&amp;index_geocode=0</id>
+		<title>Yellow Snow-ice Warning issued for United Kingdom - SW Scotland, Lothian Borders</title>
+		<updated>2022-12-07T10:21:15Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>EMMA_ID</valueName>
+			<value>UK110</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:UK110" hreflang="en" title="North East England"/>
+		<cap:areaDesc>North East England</cap:areaDesc>
+		<cap:event>Yellow ice warning</cap:event>
+		<cap:sent>2022-12-07T10:21:15+00:00</cap:sent>
+		<cap:expires>2022-12-08T12:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-06T10:25:36+00:00</cap:effective>
+		<cap:onset>2022-12-07T18:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Update</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.826.0.GB_221207102115_f8266282.v2.0.SI</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/3a6219b9-3875-4cb9-9c0d-874f619ec0b2" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=UK" hreflang="en" rel="related" title="United Kingdom"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T10:21:15Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/3a6219b9-3875-4cb9-9c0d-874f619ec0b2?index_info=0&amp;index_area=2&amp;index_geocode=0</id>
+		<title>Yellow Snow-ice Warning issued for United Kingdom - North East England</title>
+		<updated>2022-12-07T10:21:15Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>EMMA_ID</valueName>
+			<value>UK114</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:UK114" hreflang="en" title="East of England"/>
+		<cap:areaDesc>East of England</cap:areaDesc>
+		<cap:event>Yellow ice warning</cap:event>
+		<cap:sent>2022-12-07T10:21:15+00:00</cap:sent>
+		<cap:expires>2022-12-08T12:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-06T10:25:36+00:00</cap:effective>
+		<cap:onset>2022-12-07T18:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Update</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.826.0.GB_221207102115_f8266282.v2.0.SI</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/3a6219b9-3875-4cb9-9c0d-874f619ec0b2" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=UK" hreflang="en" rel="related" title="United Kingdom"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T10:21:15Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/3a6219b9-3875-4cb9-9c0d-874f619ec0b2?index_info=0&amp;index_area=1&amp;index_geocode=0</id>
+		<title>Yellow Snow-ice Warning issued for United Kingdom - East of England</title>
+		<updated>2022-12-07T10:21:15Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>EMMA_ID</valueName>
+			<value>UK113</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:UK113" hreflang="en" title="East Midlands"/>
+		<cap:areaDesc>East Midlands</cap:areaDesc>
+		<cap:event>Yellow ice warning</cap:event>
+		<cap:sent>2022-12-07T10:21:15+00:00</cap:sent>
+		<cap:expires>2022-12-08T12:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-06T10:25:36+00:00</cap:effective>
+		<cap:onset>2022-12-07T18:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Update</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.826.0.GB_221207102115_f8266282.v2.0.SI</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/3a6219b9-3875-4cb9-9c0d-874f619ec0b2" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=UK" hreflang="en" rel="related" title="United Kingdom"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T10:21:15Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/3a6219b9-3875-4cb9-9c0d-874f619ec0b2?index_info=0&amp;index_area=0&amp;index_geocode=0</id>
+		<title>Yellow Snow-ice Warning issued for United Kingdom - East Midlands</title>
+		<updated>2022-12-07T10:21:15Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>EMMA_ID</valueName>
+			<value>UK112</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:UK112" hreflang="en" title="West Midlands"/>
+		<cap:areaDesc>West Midlands</cap:areaDesc>
+		<cap:event>Yellow ice warning</cap:event>
+		<cap:sent>2022-12-07T09:26:11+00:00</cap:sent>
+		<cap:expires>2022-12-08T18:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-06T10:24:53+00:00</cap:effective>
+		<cap:onset>2022-12-07T17:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Update</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.826.0.GB_221207092611_b5bb94b3.v2.0.SI</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/bca9d20a-3857-4406-814e-19d011cb3d14" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=UK" hreflang="en" rel="related" title="United Kingdom"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T09:26:11Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/bca9d20a-3857-4406-814e-19d011cb3d14?index_info=0&amp;index_area=4&amp;index_geocode=0</id>
+		<title>Yellow Snow-ice Warning issued for United Kingdom - West Midlands</title>
+		<updated>2022-12-07T09:26:11Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>EMMA_ID</valueName>
+			<value>UK117</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:UK117" hreflang="en" title="Wales"/>
+		<cap:areaDesc>Wales</cap:areaDesc>
+		<cap:event>Yellow ice warning</cap:event>
+		<cap:sent>2022-12-07T09:26:11+00:00</cap:sent>
+		<cap:expires>2022-12-08T18:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-06T10:24:53+00:00</cap:effective>
+		<cap:onset>2022-12-07T17:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Update</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.826.0.GB_221207092611_b5bb94b3.v2.0.SI</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/bca9d20a-3857-4406-814e-19d011cb3d14" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=UK" hreflang="en" rel="related" title="United Kingdom"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T09:26:11Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/bca9d20a-3857-4406-814e-19d011cb3d14?index_info=0&amp;index_area=3&amp;index_geocode=0</id>
+		<title>Yellow Snow-ice Warning issued for United Kingdom - Wales</title>
+		<updated>2022-12-07T09:26:11Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>EMMA_ID</valueName>
+			<value>UK115</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:UK115" hreflang="en" title="South West England"/>
+		<cap:areaDesc>South West England</cap:areaDesc>
+		<cap:event>Yellow ice warning</cap:event>
+		<cap:sent>2022-12-07T09:26:11+00:00</cap:sent>
+		<cap:expires>2022-12-08T18:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-06T10:24:53+00:00</cap:effective>
+		<cap:onset>2022-12-07T17:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Update</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.826.0.GB_221207092611_b5bb94b3.v2.0.SI</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/bca9d20a-3857-4406-814e-19d011cb3d14" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=UK" hreflang="en" rel="related" title="United Kingdom"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T09:26:11Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/bca9d20a-3857-4406-814e-19d011cb3d14?index_info=0&amp;index_area=2&amp;index_geocode=0</id>
+		<title>Yellow Snow-ice Warning issued for United Kingdom - South West England</title>
+		<updated>2022-12-07T09:26:11Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>EMMA_ID</valueName>
+			<value>UK108</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:UK108" hreflang="en" title="Northern Ireland"/>
+		<cap:areaDesc>Northern Ireland</cap:areaDesc>
+		<cap:event>Yellow ice warning</cap:event>
+		<cap:sent>2022-12-07T09:26:11+00:00</cap:sent>
+		<cap:expires>2022-12-08T18:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-06T10:24:53+00:00</cap:effective>
+		<cap:onset>2022-12-07T17:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Update</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.826.0.GB_221207092611_b5bb94b3.v2.0.SI</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/bca9d20a-3857-4406-814e-19d011cb3d14" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=UK" hreflang="en" rel="related" title="United Kingdom"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T09:26:11Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/bca9d20a-3857-4406-814e-19d011cb3d14?index_info=0&amp;index_area=1&amp;index_geocode=0</id>
+		<title>Yellow Snow-ice Warning issued for United Kingdom - Northern Ireland</title>
+		<updated>2022-12-07T09:26:11Z</updated>
+	</entry>
+	<entry>
+		<cap:geocode>
+			<valueName>EMMA_ID</valueName>
+			<value>UK109</value>
+		</cap:geocode>
+		<link href="https://meteoalarm.org?geocode=EMMA_ID:UK109" hreflang="en" title="North West England"/>
+		<cap:areaDesc>North West England</cap:areaDesc>
+		<cap:event>Yellow ice warning</cap:event>
+		<cap:sent>2022-12-07T09:26:11+00:00</cap:sent>
+		<cap:expires>2022-12-08T18:00:00+00:00</cap:expires>
+		<cap:effective>2022-12-06T10:24:53+00:00</cap:effective>
+		<cap:onset>2022-12-07T17:00:00+00:00</cap:onset>
+		<cap:certainty>Likely</cap:certainty>
+		<cap:severity>Moderate</cap:severity>
+		<cap:urgency>Future</cap:urgency>
+		<cap:scope>Public</cap:scope>
+		<cap:message_type>Update</cap:message_type>
+		<cap:status>Actual</cap:status>
+		<cap:identifier>2.49.0.0.826.0.GB_221207092611_b5bb94b3.v2.0.SI</cap:identifier>
+		<link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/bca9d20a-3857-4406-814e-19d011cb3d14" type="application/cap+xml"/>
+		<link href="https://meteoalarm.org?region=UK" hreflang="en" rel="related" title="United Kingdom"/>
+		<author>
+			<name>meteoalarm.org</name>
+			<uri>https://meteoalarm.org</uri>
+		</author>
+		<published>2022-12-07T09:26:11Z</published>
+		<id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/bca9d20a-3857-4406-814e-19d011cb3d14?index_info=0&amp;index_area=0&amp;index_geocode=0</id>
+		<title>Yellow Snow-ice Warning issued for United Kingdom - North West England</title>
+		<updated>2022-12-07T09:26:11Z</updated>
+	</entry>
+</feed>

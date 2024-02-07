@@ -45,8 +45,7 @@ class Meteoalert(object):
         feed = feed_data.get('feed', [])
         entries = feed.get('entry', [])
         for entry in (entries if type(entries) is list else [entries]):
-            #if entry.get('cap:areaDesc') != self.province:
-            if re.search(rf"{self.province}", entry.get('cap:areaDesc'), re.IGNORECASE) == None:
+            if not self.is_location_match(entry, self.province):
                 continue
 
             # Get the cap URL for additional alert data
@@ -54,8 +53,6 @@ class Meteoalert(object):
             for link in entry.get('link'):
                 if 'application/cap+xml' == link.get('@type'):
                     cap_url = link.get('@href')
-
-            print(cap_url)
 
             if not cap_url:
                 continue
@@ -105,6 +102,18 @@ class Meteoalert(object):
                 pass
             break
         return data
+
+    def is_location_match(self, entry, province):
+        # Attempt to match the province first by regex on name
+        if re.search(rf"{self.province}", entry.get('cap:areaDesc'), re.IGNORECASE):
+            return True
+
+        # then by areaCode
+        elif entry.get('cap:geocode') and entry.get('cap:geocode')['value']:
+            if entry.get('cap:geocode')['value'] == province:
+                return True
+
+        return False
 
 
     def check_status_code(self, status_code):
