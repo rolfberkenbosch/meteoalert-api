@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:cap="urn:oasis:names:tc:emergency:cap:1.2">
+  <link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
+  <link href="https://feeds.meteoalarm.org/feeds/meteoalarm-legacy-atom-austria" rel="self" type="application/atom+xml"/>
+  <link href="https://meteoalarm.org" rel="alternate" type="text/html"/>
+  <rights>Copyright © 2024 MeteoAlarm.Org. Licensed under terms equivalent to CC BY 4.0, with additional requirements for redistributing outlined in our Terms and Conditions.</rights>
+  <generator>MeteoAlarm Producer Server</generator>
+  <logo>https://feeds.meteoalarm.org/images/logo.svg</logo>
+  <author>
+    <name>meteoalarm.org</name>
+    <uri>https://meteoalarm.org</uri>
+    <email>meteoalarm@geosphere.at</email>
+  </author>
+  <id>tag:meteoalarm.org,2021-02-19:AT</id>
+  <title>MeteoAlarm - Alerting Europe for Extreme Weather</title>
+  <updated>2024-07-20T13:31:28.819913Z</updated>
+  <entry>
+    <cap:geocode>
+      <valueName>EMMA_ID</valueName>
+      <value>AT402</value>
+    </cap:geocode>
+    <link href="https://meteoalarm.org?geocode=EMMA_ID:AT402" hreflang="en" title="Steyr (Stadt)"/>
+    <cap:areaDesc>Steyr (Stadt)</cap:areaDesc>
+    <cap:event>Thunderstormwarning</cap:event>
+    <cap:sent>2024-07-19T15:50:41+00:00</cap:sent>
+    <cap:expires>2024-07-19T16:50:40+00:00</cap:expires>
+    <cap:effective>2024-07-19T15:50:41+00:00</cap:effective>
+    <cap:onset>2024-07-19T15:50:40+00:00</cap:onset>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:severity>Moderate</cap:severity>
+    <cap:urgency>Future</cap:urgency>
+    <cap:scope>Public</cap:scope>
+    <cap:message_type>Update</cap:message_type>
+    <cap:status>Actual</cap:status>
+    <cap:identifier>2.49.0.0.40.0.AT.-20240719175041_ATNT_402</cap:identifier>
+    <link href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-austria/9d026909-452c-4a89-b0d7-93b9709f5005" type="application/cap+xml"/>
+    <link href="https://meteoalarm.org?region=AT" hreflang="en" rel="related" title="Austria"/>
+    <author>
+      <name>meteoalarm.org</name>
+      <uri>https://meteoalarm.org</uri>
+    </author>
+    <published>2024-07-19T15:50:41Z</published>
+    <id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-austria/9d026909-452c-4a89-b0d7-93b9709f5005?index_info=1&amp;index_area=0&amp;index_geocode=0</id>
+    <title>Yellow Thunderstorm Warning issued for Austria - Steyr (Stadt)</title>
+    <updated>2024-07-19T15:50:41Z</updated>
+  </entry>
+</feed>

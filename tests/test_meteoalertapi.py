@@ -82,6 +82,19 @@ class TestMeteoalert(unittest.TestCase):
         self.assertEqual(type(data), dict)
         self.assertEqual(len(data), 0)
 
+    @requests_mock.mock()
+    def test_retrieve_alert_for_region_with_special_characters(self, m):
+        with open(self._file_path('austria_sample.xml')) as xml_file:
+            m.register_uri('GET', '/feeds/meteoalarm-legacy-atom-austria', text=xml_file.read(), status_code=200)
+        with open(self._file_path('austria_sample_detail.xml')) as xml_file:
+            m.register_uri('GET', '/api/v1/warnings/feeds-austria/9d026909-452c-4a89-b0d7-93b9709f5005',
+                           text=xml_file.read(), status_code=200)
+
+        self.meteo = Meteoalert('Austria', 'Steyr (Stadt)')
+        data = self.meteo.get_alert()
+        self.assertEqual(type(data), dict)
+        self.assertGreater(len(data), 0)
+
     def test_server_not_reachable(self):
         self.meteo = Meteoalert('poland', 'krakow', 'en-US')
         self.meteo.endpoint = "https://simulate-dns-problem-with-meteo.zzzzzz/{0}"

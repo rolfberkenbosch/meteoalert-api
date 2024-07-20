@@ -105,7 +105,7 @@ class Meteoalert(object):
 
     def is_location_match(self, entry, province):
         # Attempt to match the province first by regex on name
-        if re.search(rf"{self.province}", entry.get('cap:areaDesc'), re.IGNORECASE):
+        if re.search(rf"{re.escape(self.province)}", entry.get('cap:areaDesc'), re.IGNORECASE):
             return True
 
         # then by areaCode

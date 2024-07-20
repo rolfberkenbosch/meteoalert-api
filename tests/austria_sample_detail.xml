@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.0.40.0.AT.-20240719175041_ATNT_402</identifier>
+  <sender>cap@zamg.ac.at</sender>
+  <sent>2024-07-19T17:50:41+02:00</sent>
+  <status>Actual</status>
+  <msgType>Update</msgType>
+  <scope>Public</scope>
+  <references>cap@zamg.ac.at,2.49.0.0.40.0.AT.-20240719174708_ATNT_402,2024-07-19T17:47:08+02:00</references>
+  <info>
+    <language>de-DE</language>
+    <category>Met</category>
+    <event>Gewitterwarnung</event>
+    <responseType>Monitor</responseType>
+    <urgency>Future</urgency>
+    <severity>Moderate</severity>
+    <certainty>Likely</certainty>
+    <effective>2024-07-19T17:50:41+02:00</effective>
+    <onset>2024-07-19T17:50:40+02:00</onset>
+    <expires>2024-07-19T18:50:40+02:00</expires>
+    <senderName>GeoSphere Austria</senderName>
+    <headline>Gewitterwarnung</headline>
+    <description>Ab sofort (19.07.2024 17:50) ist mit Gewittern zu rechnen.</description>
+    <instruction>VORSICHT bei Aktivitäten im Freien, Gewitter sind möglich. Achtung an exponierten Stellen, wie auf Bergen und freien Flächen sowie im Wald.</instruction>
+    <web>http://warnungen.zamg.at/html/de/heute/Gewitter/at/oberoesterreich/</web>
+    <parameter>
+      <valueName>awareness_level</valueName>
+      <value>2; yellow; Moderate</value>
+    </parameter>
+    <parameter>
+      <valueName>awareness_type</valueName>
+      <value>3; Thunderstorm</value>
+    </parameter>
+    <area>
+      <areaDesc>Steyr (Stadt)</areaDesc>
+      <geocode>
+        <valueName>EMMA_ID</valueName>
+        <value>AT402</value>
+      </geocode>
+    </area>
+  </info>
+  <info>
+    <language>en-GB</language>
+    <category>Met</category>
+    <event>Thunderstormwarning</event>
+    <responseType>Monitor</responseType>
+    <urgency>Future</urgency>
+    <severity>Moderate</severity>
+    <certainty>Likely</certainty>
+    <effective>2024-07-19T17:50:41+02:00</effective>
+    <onset>2024-07-19T17:50:40+02:00</onset>
+    <expires>2024-07-19T18:50:40+02:00</expires>
+    <senderName>GeoSphere Austria</senderName>
+    <headline>Thunderstormwarning</headline>
+    <description>Henceforth (19.07.2024 17:50) thunderstorms are possible.</description>
+    <instruction>BE AWARE that thunderstorms may occur. Take extra care in exposed areas, like mountains, forest and open terrain. Disruption to outdoor activities is possible.</instruction>
+    <web>http://warnungen.zamg.at/html/de/heute/Gewitter/at/oberoesterreich/</web>
+    <parameter>
+      <valueName>awareness_level</valueName>
+      <value>2; yellow; Moderate</value>
+    </parameter>
+    <parameter>
+      <valueName>awareness_type</valueName>
+      <value>3; Thunderstorm</value>
+    </parameter>
+    <area>
+      <areaDesc>Steyr (Stadt)</areaDesc>
+      <geocode>
+        <valueName>EMMA_ID</valueName>
+        <value>AT402</value>
+      </geocode>
+    </area>
+  </info>
+</alert>
