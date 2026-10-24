@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:cap="urn:oasis:names:tc:emergency:cap:1.2">
+  <link rel="hub" href="https://pubsubhubbub.appspot.com/"/>
+  <link type="application/atom+xml" rel="self" href="https://feeds.meteoalarm.org/feeds/meteoalarm-legacy-atom-united-kingdom"/>
+  <link type="text/html" rel="alternate" href="https://meteoalarm.org"/>
+  <rights>Copyright © 2026 MeteoAlarm.Org. Licensed under terms equivalent to CC BY 4.0, with additional requirements for redistributing outlined in our Terms and Conditions.</rights>
+  <generator>MeteoAlarm Producer Server</generator>
+  <logo>https://feeds.meteoalarm.org/images/logo.svg</logo>
+  <author>
+    <name>meteoalarm.org</name>
+    <uri>https://meteoalarm.org</uri>
+    <email>meteoalarm@geosphere.at</email>
+  </author>
+  <id>tag:meteoalarm.org,2021-02-19:UK</id>
+  <title>MeteoAlarm - Alerting Europe for Extreme Weather</title>
+  <updated>2026-10-24T10:06:01.453446Z</updated>
+  <entry>
+    <cap:polygon></cap:polygon>
+    <link title="Central, Tayside &amp; Fife | Grampian | Highlands &amp; Eilean Siar" href="https://meteoalarm.org?polygon=43e42eb0-196b-4fe7-b26e-1e3490954cc9,0,0,0" hreflang="en"/>
+    <cap:areaDesc>Central, Tayside &amp; Fife | Grampian | Highlands &amp; Eilean Siar</cap:areaDesc>
+    <cap:event>Yellow rain warning</cap:event>
+    <cap:sent>2026-10-24T08:39:36+00:00</cap:sent>
+    <cap:expires>2026-10-25T15:00:00+00:00</cap:expires>
+    <cap:onset>2026-10-24T20:00:00+00:00</cap:onset>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:severity>Moderate</cap:severity>
+    <cap:urgency>Future</cap:urgency>
+    <cap:scope>Public</cap:scope>
+    <cap:message_type>Alert</cap:message_type>
+    <cap:status>Actual</cap:status>
+    <cap:identifier>2.49.0.0.826.0.GB_261024083936_25f1a2cf.v1.0.R</cap:identifier>
+    <link type="application/cap+xml" href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/43e42eb0-196b-4fe7-b26e-1e3490954cc9"/>
+    <link title="United Kingdom" rel="related" href="https://meteoalarm.org?region=UK" hreflang="en"/>
+    <author>
+      <name>meteoalarm.org</name>
+      <uri>https://meteoalarm.org</uri>
+    </author>
+    <published>2026-10-24T08:39:36Z</published>
+    <id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/43e42eb0-196b-4fe7-b26e-1e3490954cc9?index_info=0&amp;index_area=0&amp;index_polygon=0</id>
+    <title>Yellow Rain Warning issued for United Kingdom - Central, Tayside &amp; Fife | Grampian | Highlands &amp; Eilean Siar</title>
+    <updated>2026-10-24T08:39:36Z</updated>
+  </entry>
+    <entry>
+    <cap:polygon></cap:polygon>
+    <link title="Central, Tayside &amp; Fife | Grampian | Highlands &amp; Eilean Siar | North East England | North West England | Strathclyde | SW Scotland, Lothian Borders | Yorkshire &amp; Humber" href="https://meteoalarm.org?polygon=ebbdecd5-fa00-40ec-9fa2-a4a5ea13b424,0,0,0" hreflang="en"/>
+    <cap:areaDesc>Central, Tayside &amp; Fife | Grampian | Highlands &amp; Eilean Siar | North East England | North West England | Strathclyde | SW Scotland, Lothian Borders | Yorkshire &amp; Humber</cap:areaDesc>
+    <cap:event>Amber wind warning</cap:event>
+    <cap:sent>2026-10-24T07:42:59+00:00</cap:sent>
+    <cap:expires>2026-10-25T21:00:00+00:00</cap:expires>
+    <cap:onset>2026-10-24T20:00:00+00:00</cap:onset>
+    <cap:certainty>Likely</cap:certainty>
+    <cap:severity>Severe</cap:severity>
+    <cap:urgency>Future</cap:urgency>
+    <cap:scope>Public</cap:scope>
+    <cap:message_type>Update</cap:message_type>
+    <cap:status>Actual</cap:status>
+    <cap:identifier>2.49.0.0.826.0.GB_261024074259_34b39a5a.v2.0.W</cap:identifier>
+    <link type="application/cap+xml" href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/ebbdecd5-fa00-40ec-9fa2-a4a5ea13b424"/>
+    <link title="United Kingdom" rel="related" href="https://meteoalarm.org?region=UK" hreflang="en"/>
+    <author>
+      <name>meteoalarm.org</name>
+      <uri>https://meteoalarm.org</uri>
+    </author>
+    <published>2026-10-24T07:42:59Z</published>
+    <id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/ebbdecd5-fa00-40ec-9fa2-a4a5ea13b424?index_info=0&amp;index_area=0&amp;index_polygon=0</id>
+    <title>Orange Wind Warning issued for United Kingdom - Central, Tayside &amp; Fife | Grampian | Highlands &amp; Eilean Siar | North East England | North West England | Strathclyde | SW Scotland, Lothian Borders | Yorkshire &amp; Humber</title>
+    <updated>2026-10-24T07:42:59Z</updated>
+  </entry>
+    <entry>
+    <cap:polygon></cap:polygon>
+    <link title="Central, Tayside &amp; Fife | East Midlands | Grampian | Highlands &amp; Eilean Siar | North East England | North West England | Orkney &amp; Shetland | Strathclyde | SW Scotland, Lothian Borders | Wales | West Midlands | Yorkshire &amp; Humber" href="https://meteoalarm.org?polygon=b0e83ff1-0a4b-4f2e-947a-c20b1432417c,0,0,0" hreflang="en"/>
+    <cap:areaDesc>Central, Tayside &amp; Fife | East Midlands | Grampian | Highlands &amp; Eilean Siar | North East England | North West England | Orkney &amp; Shetland | Strathclyde | SW Scotland, Lothian Borders | Wales | West Midlands | Yorkshire &amp; Humber</cap:areaDesc>
+    <cap:event>Yellow wind warning</cap:event>
+    <cap:sent>2026-10-24T07:42:42+00:00</cap:sent>
+    <cap:expires>2026-10-25T21:00:00+00:00</cap:expires>
+    <cap:onset>2026-10-24T11:00:00+00:00</cap:onset>
+    <cap:certainty>Possible</cap:certainty>
+    <cap:severity>Moderate</cap:severity>
+    <cap:urgency>Future</cap:urgency>
+    <cap:scope>Public</cap:scope>
+    <cap:message_type>Update</cap:message_type>
+    <cap:status>Actual</cap:status>
+    <cap:identifier>2.49.0.0.826.0.GB_261024074242_6bbbf7de.v3.0.W</cap:identifier>
+    <link type="application/cap+xml" href="https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/b0e83ff1-0a4b-4f2e-947a-c20b1432417c"/>
+    <link title="United Kingdom" rel="related" href="https://meteoalarm.org?region=UK" hreflang="en"/>
+    <author>
+      <name>meteoalarm.org</name>
+      <uri>https://meteoalarm.org</uri>
+    </author>
+    <published>2026-10-24T07:42:42Z</published>
+    <id>https://feeds.meteoalarm.org/api/v1/warnings/feeds-united-kingdom/b0e83ff1-0a4b-4f2e-947a-c20b1432417c?index_info=0&amp;index_area=0&amp;index_polygon=0</id>
+    <title>Yellow Wind Warning issued for United Kingdom - Central, Tayside &amp; Fife | East Midlands | Grampian | Highlands &amp; Eilean Siar | North East England | North West England | Orkney &amp; Shetland | Strathclyde | SW Scotland, Lothian Borders | Wales | West Midlands | Yorkshire &amp; Humber</title>
+    <updated>2026-10-24T07:42:42Z</updated>
+  </entry>
+</feed>

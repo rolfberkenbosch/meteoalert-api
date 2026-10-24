@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.0.826.0.GB_261024074242_6bbbf7de.v3.0.W</identifier>
+  <sender>https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings</sender>
+  <sent>2026-10-24T07:42:42+00:00</sent>
+  <status>Actual</status>
+  <msgType>Update</msgType>
+  <source>2.49.0.0.826.0.GB</source>
+  <scope>Public</scope>
+  <code>MCP:v2.0</code>
+  <references>https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings,2.49.0.0.826.0.GB_261022100002_6bbbf7de.v1.0.W,2026-10-22T10:00:02+00:00 https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings,2.49.0.0.826.0.GB_261023090111_6bbbf7de.v2.0.W,2026-10-23T09:01:11+00:00</references>
+  <info>
+    <language>en-GB</language>
+    <category>Met</category>
+    <event>Yellow wind warning</event>
+    <responseType>Prepare</responseType>
+    <urgency>Future</urgency>
+    <severity>Moderate</severity>
+    <certainty>Possible</certainty>
+    <onset>2026-10-24T11:00:00+00:00</onset>
+    <expires>2026-10-25T21:00:00+00:00</expires>
+    <senderName>UK Met Office</senderName>
+    <headline>Storm Boelo will bring a very windy and wet spell this weekend with some disruption likely across parts of northern UK. : UPDATED</headline>
+    <description>Information on update: Warning extended further south across northern England and into north Wales. . Strong winds will spread across northern parts of the UK during Saturday afternoon, combining with spells of heavy rain. Initially strong southerly winds will affect parts of Scotland before more widespread and even stronger westerly winds develop later on Saturday. Very windy conditions will then persist overnight and through much of Sunday before gradually easing from the southwest later. Gusts of 55-65 mph are likely widely with some coastal and exposed areas potentially seeing gusts of 70-80 mph or more, these strongest gusts most likely across Scotland and the far north of England. 
+
+For further details see https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings</description>
+    <instruction>Prepare to protect your property and people from injury. Check for loose items outside your home and plan how you could secure them. Items include: bins, garden furniture, trampolines, tents, sheds, and fences.
+
+People cope better with power cuts when they have prepared for them in advance. It's easy to do; consider gathering torches and batteries, a mobile phone power pack and other essential items.
+
+Give yourself the best chance of avoiding delays by checking road conditions if driving, or bus and train timetables, amending your travel plans if necessary.
+
+If you are on the coast, stay safe during stormy weather by being aware of large waves. Even from the shore large breaking waves can sweep you off your feet and out to sea. Take care if walking near cliffs; know your route and keep dogs on a lead. In an emergency, call 999 and ask for the Coastguard.
+
+Be prepared for weather warnings to change quickly. When a weather warning is issued, the Met Office recommends staying up to date with the weather forecast in your area.</instruction>
+    <web>https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings</web>
+    <parameter>
+      <valueName>awareness_level</valueName>
+      <value>2; Yellow; Moderate</value>
+    </parameter>
+    <parameter>
+      <valueName>awareness_type</valueName>
+      <value>1; Wind</value>
+    </parameter>
+    <parameter>
+      <valueName>impacts</valueName>
+      <value>Injuries and danger to life from flying debris are possible</value>
+    </parameter>
+    <parameter>
+      <valueName>impacts</valueName>
+      <value>Some damage to buildings and trees, such as tiles blown from roofs and large branches or trees blown over, could happen</value>
+    </parameter>
+    <parameter>
+      <valueName>impacts</valueName>
+      <value>Road, rail, air and ferry services may be affected, with longer journey times and cancellations possible</value>
+    </parameter>
+    <parameter>
+      <valueName>impacts</valueName>
+      <value>Some roads and bridges may close</value>
+    </parameter>
+    <parameter>
+      <valueName>impacts</valueName>
+      <value>Power cuts may occur, with the potential to affect other services, such as mobile phone coverage</value>
+    </parameter>
+    <parameter>
+      <valueName>impacts</valueName>
+      <value>Injuries and danger to life could occur from large waves and beach material being thrown onto sea fronts, coastal roads and properties</value>
+    </parameter>
+    <area>
+      <areaDesc>Central, Tayside &amp; Fife | East Midlands | Grampian | Highlands &amp; Eilean Siar | North East England | North West England | Orkney &amp; Shetland | Strathclyde | SW Scotland, Lothian Borders | Wales | West Midlands | Yorkshire &amp; Humber</areaDesc>
+      <polygon></polygon>
+    </area>
+  </info>
+</alert>

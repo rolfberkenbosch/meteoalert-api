@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.0.826.0.GB_261024083936_25f1a2cf.v1.0.R</identifier>
+  <sender>https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings</sender>
+  <sent>2026-10-24T08:39:36+00:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <source>2.49.0.0.826.0.GB</source>
+  <scope>Public</scope>
+  <code>MCP:v2.0</code>
+  <info>
+    <language>en-GB</language>
+    <category>Met</category>
+    <event>Yellow rain warning</event>
+    <responseType>Prepare</responseType>
+    <urgency>Future</urgency>
+    <severity>Moderate</severity>
+    <certainty>Likely</certainty>
+    <onset>2026-10-24T20:00:00+00:00</onset>
+    <expires>2026-10-25T15:00:00+00:00</expires>
+    <senderName>UK Met Office</senderName>
+    <headline>Heavy rain associated with Storm Boelo is likely to cause some travel disruption and flooding in a few places</headline>
+    <description>Frequent heavy showers or more organised bands of rain will develop across northern Scotland during Saturday evening in association with Storm Boelo, continuing through Sunday morning and early afternoon. 
+
+Accumulations of 20-40 mm are expected widely within the warning area through this period, with 60-80 mm possible in some locations, bringing flooding and travel disruption in a few places. Showers will become less frequent later through Sunday afternoon.
+
+For further details see https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings</description>
+    <instruction>Check if your property could be at risk of flooding. If so, consider preparing a flood plan and an emergency flood kit.
+
+Give yourself the best chance of avoiding delays by checking road conditions if driving, or bus and train timetables, amending your travel plans if necessary.
+
+People cope better with power cuts when they have prepared for them in advance. It's easy to do; consider gathering torches and batteries, a mobile phone power pack and other essential items.
+
+Be prepared for weather warnings to change quickly: when a weather warning is issued, the Met Office recommends staying up to date with the weather forecast in your area.</instruction>
+    <web>https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings</web>
+    <parameter>
+      <valueName>awareness_level</valueName>
+      <value>2; Yellow; Moderate</value>
+    </parameter>
+    <parameter>
+      <valueName>awareness_type</valueName>
+      <value>10; Rain</value>
+    </parameter>
+    <parameter>
+      <valueName>impacts</valueName>
+      <value>Flooding of a few homes and businesses is possible</value>
+    </parameter>
+    <parameter>
+      <valueName>impacts</valueName>
+      <value>Bus and train services probably affected with journey times taking longer</value>
+    </parameter>
+    <parameter>
+      <valueName>impacts</valueName>
+      <value>Spray and flooding on roads probably making journey times longer</value>
+    </parameter>
+    <area>
+      <areaDesc>Central, Tayside &amp; Fife | Grampian | Highlands &amp; Eilean Siar</areaDesc>
+      <polygon></polygon>
+    </area>
+  </info>
+</alert>

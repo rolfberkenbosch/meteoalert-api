@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>2.49.0.0.826.0.GB_261024074259_34b39a5a.v2.0.W</identifier>
+  <sender>https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings</sender>
+  <sent>2026-10-24T07:42:59+00:00</sent>
+  <status>Actual</status>
+  <msgType>Update</msgType>
+  <source>2.49.0.0.826.0.GB</source>
+  <scope>Public</scope>
+  <code>MCP:v2.0</code>
+  <references>https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings,2.49.0.0.826.0.GB_261023090239_34b39a5a.v1.0.W,2026-10-23T09:02:39+00:00</references>
+  <info>
+    <language>en-GB</language>
+    <category>Met</category>
+    <event>Amber wind warning</event>
+    <responseType>Prepare</responseType>
+    <urgency>Future</urgency>
+    <severity>Severe</severity>
+    <certainty>Likely</certainty>
+    <onset>2026-10-24T20:00:00+00:00</onset>
+    <expires>2026-10-25T21:00:00+00:00</expires>
+    <senderName>UK Met Office</senderName>
+    <headline>The strongest winds from Storm Boelo are expected from Saturday evening, extending eastwards through Sunday. : UPDATED</headline>
+    <description>Information on update: Warning extended further south across northern England, and Northern Ireland removed due to differing timings. . Very strong westerly winds associated with Storm Boelo are expected to bring fairly widespread gusts of 60 to 70 mph and gusts to 80 mph in exposed coastal areas. The strongest winds will initially affect western Scotland on Saturday evening, spreading eastwards overnight and through Sunday. High winds will be accompanied by periods of heavy rain and frequent showers. Whilst high winds are expected across a wider area with a yellow warning in force, there is a higher confidence in impacts and disruption taking place within this amber warning area. The winds will gradually ease from the southwest through Sunday.
+
+For further details see https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings</description>
+    <instruction>Driving in these conditions can be dangerous, for yourself and other road users. If you must drive, you can do this more safely by taking the following actions; drive slowly to minimise the impact of wind gusts, be aware of high-sided vehicles/caravans on more exposed roads and be cautious when overtaking, and give cyclists, motorcyclists, lorries, and buses more room than usual.
+
+Being outside in high winds makes you more vulnerable to injury. Stay indoors as much as possible. If you do go out, try not to walk, or shelter, close to buildings and trees. In advance of high winds, check for loose items outside your home and secure them. Items include: bins, garden furniture, trampolines, tents, sheds, and fences.
+
+If you are on the coast, stay safe during stormy weather by being aware of large waves. Even from the shore large breaking waves can sweep you off your feet and out to sea. Take care if walking near cliffs; know your route and keep dogs on a lead. In an emergency, call 999 and ask for the Coastguard.
+
+People cope better with power cuts when they have prepared for them in advance. It's easy to do; consider gathering torches and batteries, a mobile phone power pack and other essential items.
+
+Stay up to date with the weather forecast for your area and follow advice from emergency services and local authorities.</instruction>
+    <web>https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings</web>
+    <parameter>
+      <valueName>awareness_level</valueName>
+      <value>3; Orange; Severe</value>
+    </parameter>
+    <parameter>
+      <valueName>awareness_type</valueName>
+      <value>1; Wind</value>
+    </parameter>
+    <parameter>
+      <valueName>impacts</valueName>
+      <value>There is a good chance that power cuts may occur, with the potential to affect other services, such as mobile phone coverage</value>
+    </parameter>
+    <parameter>
+      <valueName>impacts</valueName>
+      <value>Flying debris is likely and could lead to injuries or danger to life</value>
+    </parameter>
+    <parameter>
+      <valueName>impacts</valueName>
+      <value>Some damage to buildings and trees, such as tiles blown from roofs and large branches or trees blown over, is likely</value>
+    </parameter>
+    <parameter>
+      <valueName>impacts</valueName>
+      <value>Longer journey times and cancellations likely, as road, rail, air and ferry services may be affected</value>
+    </parameter>
+    <parameter>
+      <valueName>impacts</valueName>
+      <value>Some roads and bridges likely to close</value>
+    </parameter>
+    <parameter>
+      <valueName>impacts</valueName>
+      <value>Injuries and danger to life are likely from large waves and beach material being thrown onto coastal roads, sea fronts and properties</value>
+    </parameter>
+    <area>
+      <areaDesc>Central, Tayside &amp; Fife | Grampian | Highlands &amp; Eilean Siar | North East England | North West England | Strathclyde | SW Scotland, Lothian Borders | Yorkshire &amp; Humber</areaDesc>
+      <polygon></polygon>
+    </area>
+  </info>
+</alert>

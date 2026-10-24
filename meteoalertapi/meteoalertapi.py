@@ -3,6 +3,8 @@ import sys
 import xmltodict
 import requests
 import re
+import calendar
+import time
 
 class WrongCountry(Exception):
     pass
@@ -12,6 +14,11 @@ class ServerError(Exception):
 
 class UnexpectedError(Exception):
     pass
+
+
+# CAP severities, least to most severe
+SEVERITIES = ['Unknown', 'Minor', 'Moderate', 'Severe', 'Extreme']
+
 
 class Meteoalert(object):
 
@@ -23,8 +30,14 @@ class Meteoalert(object):
         self.language = language
 
     def get_alert(self):
-        """Retrieve alert data"""
-        data = {}
+        """Retrieve the most severe alert for the province
+
+        A province can have several alerts at once (e.g. a yellow rain and an
+        amber wind warning). Alerts that haven't expired are preferred, then
+        the highest awareness level (or CAP severity when there is none).
+        Among equals the first in the feed wins, as before.
+        """
+        alerts = []
 
         try:
             url = self.endpoint.format(self.country)
@@ -70,6 +83,7 @@ class Meteoalert(object):
             else:
                 text = unicode(response._content, "utf-8")
 
+            data = {}
             alert_data = xmltodict.parse(text)
             alert = alert_data.get('alert', {})
             # Get the alert data in the requested language
@@ -100,8 +114,36 @@ class Meteoalert(object):
             except:
                 pass
                 pass
-            break
-        return data
+            alerts.append(data)
+        if not alerts:
+            return {}
+        # max() keeps the first of equally ranked alerts
+        return max(alerts, key=self.alert_rank)
+
+    def alert_rank(self, data):
+        """Sort key for an alert: (not expired, awareness level, severity)"""
+        level = re.match(r'\s*(\d+)', data.get('awareness_level') or '')
+        severity = data.get('severity')
+        return (
+            not self.is_expired(data.get('expires')),
+            int(level.group(1)) if level else 0,
+            SEVERITIES.index(severity) if severity in SEVERITIES else 0,
+        )
+
+    @staticmethod
+    def is_expired(expires):
+        """Whether a CAP time (2024-01-01T12:00:00+01:00) is in the past"""
+        match = re.match(
+            r'(\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d)(?:([+-])(\d\d):(\d\d))?',
+            expires or '')
+        if not match:
+            return False
+        timestamp = calendar.timegm(
+            time.strptime(match.group(1), '%Y-%m-%dT%H:%M:%S'))
+        if match.group(2):
+            offset = int(match.group(3)) * 3600 + int(match.group(4)) * 60
+            timestamp -= offset if match.group(2) == '+' else -offset
+        return timestamp <= time.time()
 
     def is_location_match(self, entry, province):
         # Attempt to match the province first by regex on name
