@@ -25,7 +25,14 @@ meteo = Meteoalert('country', 'province_name')
 # Get the weather alarm for your place
 meteo = Meteoalert('country', 'province_name')
 print(str(meteo.get_alert()))
+
+# Get every active alert for your place, most severe first
+for alert in meteo.get_alerts():
+    print(alert['event'], alert['awareness_level'], alert['identifier'])
 ```
+
+Each alert also includes the CAP `message_type` (`Alert`, `Update` or `Cancel`),
+`identifier`, `references` and `sent` fields, so you can track individual alerts.
 
 ## Changelog
 

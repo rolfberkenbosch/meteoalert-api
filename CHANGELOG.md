@@ -40,3 +40,10 @@ Bump to version 0.2.0
 Bug fix
 
 - Thank @attila123456 to fix the fetching bug
+
+## Unreleased
+### Added
+- `get_alerts()` returns every matching alert, most severe first (by `awareness_level`).
+- Alerts include the CAP `message_type`, `identifier`, `references` and `sent` fields.
+### Fixed
+- Alerts without an `<info>` block in the requested language are skipped instead of returning only their parameters.

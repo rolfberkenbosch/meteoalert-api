@@ -22,9 +22,9 @@ class Meteoalert(object):
         self.province = province
         self.language = language
 
-    def get_alert(self):
-        """Retrieve alert data"""
-        data = {}
+    def _fetch_alerts(self, limit=None):
+        """Retrieve alert or alerts data, stopping after `limit` alerts"""
+        alerts = []
 
         try:
             url = self.endpoint.format(self.country)
@@ -75,33 +75,63 @@ class Meteoalert(object):
             # Get the alert data in the requested language
             translations = alert.get('info', [])
 
-            try:
-                for translation in translations:
-                    if self.language not in translation.get('language'):
-                        continue
+            data = {}
+            translation = None
+            if isinstance(translations, dict):
+                # A single <info> block is used whatever its language
+                translation = translations
+            else:
+                for candidate in translations:
+                    if self.language in (candidate.get('language') or ''):
+                        translation = candidate
+                        break
 
-                    # Store alert information in the data dict
-                    for key, value in translation.items():
-                        # Check if the value is a string
-                        # Python 2 uses 'basestring' while Python 3 requires 'str'
-                        if isinstance(value, str if sys.version_info[0] >= 3 else basestring):
-                            data[key] = value
-                    
-                    # Don't check other languages
-                    break
-            except:
-                for key, value in translations.items():
-                    if isinstance(value, str if sys.version_info[0] >= 3 else basestring):
-                        data[key] = value
-            try:
-                parameters  = translation.get('parameter', [])
-                for parameter in parameters:
-                    data[parameter.get('valueName')] = parameter.get('value')
-            except:
-                pass
-                pass
-            break
-        return data
+            if translation is None:
+                continue
+
+            # Store alert information in the data dict
+            for key, value in translation.items():
+                # Check if the value is a string
+                # Python 2 uses 'basestring' while Python 3 requires 'str'
+                if isinstance(value, str if sys.version_info[0] >= 3 else basestring):
+                    data[key] = value
+
+            parameters = translation.get('parameter', [])
+            if isinstance(parameters, dict):
+                parameters = [parameters]
+            for parameter in parameters:
+                data[parameter.get('valueName')] = parameter.get('value')
+
+            # CAP message metadata, to track alerts and handle Update/Cancel
+            data['message_type'] = entry.get('cap:message_type')
+            data['identifier'] = entry.get('cap:identifier')
+            data['references'] = alert.get('references')
+            data['sent'] = alert.get('sent')
+
+            alerts.append(data)
+            if limit is not None and len(alerts) >= limit:
+                break
+
+        return alerts
+
+    def get_alert(self):
+        """Retrieve the first alert."""
+        alerts = self._fetch_alerts(limit=1)
+        return alerts[0] if alerts else {}
+
+    def get_alerts(self):
+        """Retrieve all alerts, most severe first."""
+        alerts = self._fetch_alerts()
+        # Stable sort: alerts with the same level keep the feed order
+        return sorted(alerts, key=self._awareness_level, reverse=True)
+
+    @staticmethod
+    def _awareness_level(alert):
+        """Leading number of e.g. '3; orange; Severe', or 0 if missing"""
+        try:
+            return int(alert.get('awareness_level', '').split(';')[0])
+        except ValueError:
+            return 0
 
     def is_location_match(self, entry, province):
         # Attempt to match the province first by regex on name

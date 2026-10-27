@@ -98,6 +98,51 @@ class TestMeteoalert(unittest.TestCase):
             """Should throw ServerError exception"""
             self.assertRaises(ServerError, self.meteo.get_alert)
 
+    def _mock_uk_two_alerts(self, m):
+        with open(self._file_path('uk_sample.xml')) as xml_file:
+            m.register_uri('GET', '/feeds/meteoalarm-legacy-atom-united-kingdom', text=xml_file.read(), status_code=200)
+        with open(self._file_path('uk_nothern_ireland_sample_detail.xml')) as xml_file:
+            m.register_uri('GET', '/api/v1/warnings/feeds-united-kingdom/a4647d38-40ea-4c01-b874-4e2b3df383b9',
+                           text=xml_file.read(), status_code=200)
+        with open(self._file_path('uk_nothern_ireland_sample_detail_2.xml')) as xml_file:
+            m.register_uri('GET', '/api/v1/warnings/feeds-united-kingdom/bca9d20a-3857-4406-814e-19d011cb3d14',
+                           text=xml_file.read(), status_code=200)
+
+    @requests_mock.mock()
+    def test_get_alerts_returns_all_most_severe_first(self, m):
+        self._mock_uk_two_alerts(m)
+        alerts = Meteoalert('United-Kingdom', 'Northern Ireland').get_alerts()
+
+        self.assertEqual(len(alerts), 2)
+        self.assertEqual(alerts[0]['event'], 'Amber ice warning')
+        self.assertEqual(alerts[1]['event'], 'Yellow ice warning')
+
+    @requests_mock.mock()
+    def test_get_alerts_includes_cap_metadata(self, m):
+        self._mock_uk_two_alerts(m)
+        alerts = Meteoalert('United-Kingdom', 'Northern Ireland').get_alerts()
+
+        yellow = alerts[1]
+        self.assertEqual(yellow['message_type'], 'Alert')
+        self.assertEqual(yellow['identifier'], '2.49.0.0.826.0.GB_221207102835_a705d176.v1.0.SI')
+        self.assertEqual(yellow['sent'], '2022-12-07T10:28:35+00:00')
+        self.assertIn('references', yellow)
+        self.assertEqual(alerts[0]['message_type'], 'Update')
+
+    @requests_mock.mock()
+    def test_get_alert_fetches_only_first_match(self, m):
+        self._mock_uk_two_alerts(m)
+        data = Meteoalert('United-Kingdom', 'Northern Ireland').get_alert()
+
+        self.assertEqual(data['event'], 'Yellow ice warning')
+        cap_requests = [r for r in m.request_history if '/api/v1/warnings/' in r.url]
+        self.assertEqual(len(cap_requests), 1)
+
+    @requests_mock.mock()
+    def test_get_alerts_empty(self, m):
+        self._mock_uk_two_alerts(m)
+        self.assertEqual(Meteoalert('United-Kingdom', 'Nowhere').get_alerts(), [])
+
     @staticmethod
     def _file_path(file_name):
         thispath = os.path.dirname(__file__)
